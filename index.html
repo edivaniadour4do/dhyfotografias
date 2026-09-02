@@ -232,7 +232,7 @@
 
         </div>
 
-        <!-- Foto Profissional (Hero Right) -->
+        <!-- Foto Profissional Personalizada (Hero Right) -->
         <div class="lg:col-span-5 flex justify-center">
           <div class="relative w-full max-w-md">
             
@@ -240,12 +240,12 @@
             <div class="absolute -inset-2 bg-gradient-to-tr from-brand-pink via-brand-green to-brand-pink rounded-3xl blur-md opacity-75 group-hover:opacity-100 transition duration-1000"></div>
 
             <div class="relative rounded-2xl overflow-hidden bg-brand-dark border-2 border-white/20 shadow-2xl">
-              <!-- Foto Profissional -->
+              <!-- Foto Profissional Atualizada -->
               <img 
-                src="https://images.unsplash.com/photo-1554048612-b6a482bc67e5?auto=format&fit=crop&w=800&q=80" 
-                alt="[Foto da fotógrafa profissional com a câmera]" 
-                class="w-full h-[480px] object-cover object-center filter grayscale contrast-125 hover:grayscale-0 transition-all duration-700"
-                onerror="this.src='https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=800&q=80'"
+                src="https://res.cloudinary.com/aru8btca/image/upload/v1788369211/fotoooooo.jpg" 
+                alt="[Foto da fotógrafa profissional Edivania Dourado]" 
+                class="w-full h-[480px] object-cover object-center hover:scale-105 transition-all duration-700"
+                onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1554048612-b6a482bc67e5?auto=format&fit=crop&w=800&q=80';"
               />
 
               <!-- Tarjeta Flutuante Sobre a Foto com Logomarca Integrada -->
@@ -971,4 +971,54 @@
       const nome = document.getElementById('nomeCliente').value;
       const tel = document.getElementById('telefoneCliente').value;
       const tipo = document.getElementById('tipoTrabalho').value;
-      const data = document.getElementById('dataPrevista').value || '
+      const data = document.getElementById('dataPrevista').value || 'A combinar';
+      const detalhes = document.getElementById('mensagemDetalhes').value || 'Sem notas adicionais';
+
+      const texto = `*NOVO PEDIDO DE ORÇAMENTO - DHY FOTOGRAFIAS*%0A%0A` +
+                    `👤 *Nome:* ${encodeURIComponent(nome)}%0A` +
+                    `📱 *Contato:* ${encodeURIComponent(tel)}%0A` +
+                    `📷 *Tipo de Trabalho:* ${encodeURIComponent(tipo)}%0A` +
+                    `📅 *Data Prevista:* ${encodeURIComponent(data)}%0A` +
+                    `📝 *Detalhes:* ${encodeURIComponent(detalhes)}%0A%0A` +
+                    `Gostaria de saber a sua disponibilidade e valores.`;
+
+      const numeroWhatsAppStudio = "5562998167124";
+      window.open(`https://wa.me/${numeroWhatsAppStudio}?text=${texto}`, '_blank');
+      
+      mostrarNotificacao('Abrindo WhatsApp...');
+    }
+
+    // Enviar pedido de orçamento via E-mail
+    function enviarViaEmail() {
+      const nome = document.getElementById('nomeCliente').value || 'Cliente';
+      const tel = document.getElementById('telefoneCliente').value || 'Não informado';
+      const tipo = document.getElementById('tipoTrabalho').value;
+      const data = document.getElementById('dataPrevista').value || 'A combinar';
+      const detalhes = document.getElementById('mensagemDetalhes').value || '';
+
+      const assunto = encodeURIComponent(`Pedido de Orçamento - ${tipo} - ${nome}`);
+      const corpo = encodeURIComponent(
+        `Olá Dhy Fotografias,\n\nGostaria de solicitar um orçamento para:\n\n` +
+        `Nome: ${nome}\nTelefone: ${tel}\nTipo de Ensaio: ${tipo}\nData Prevista: ${data}\nDetalhes: ${detalhes}\n\nAguardo seu retorno!`
+      );
+
+      window.location.href = `mailto:eyshilagabi2017@gmail.com?subject=${assunto}&body=${corpo}`;
+    }
+
+    // Mostrar caixa de notificação Toast
+    function mostrarNotificacao(texto) {
+      const toast = document.getElementById('toastNotification');
+      const msg = document.getElementById('toastMessage');
+      msg.textContent = texto;
+
+      toast.classList.remove('translate-y-24', 'opacity-0', 'pointer-events-none');
+      toast.classList.add('translate-y-0', 'opacity-100');
+
+      setTimeout(() => {
+        toast.classList.add('translate-y-24', 'opacity-0', 'pointer-events-none');
+        toast.classList.remove('translate-y-0', 'opacity-100');
+      }, 4000);
+    }
+  </script>
+</body>
+</html>
