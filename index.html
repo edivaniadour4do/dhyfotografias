@@ -88,7 +88,7 @@
         <div class="h-12 w-12 rounded-xl bg-white/5 border border-white/10 p-1.5 flex items-center justify-center transition-transform group-hover:scale-105 group-hover:border-brand-pink/50 duration-300">
           <img 
             src="https://res.cloudinary.com/aru8btca/image/upload/v1788368826/logo_dhy.png" 
-            alt="Dhy Fotografias Logomarca" 
+            alt="" 
             class="h-full w-full object-contain filter drop-shadow"
             onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1554048612-b6a482bc67e5?auto=format&fit=crop&w=100&q=80';"
           />
@@ -252,7 +252,7 @@
               <div class="absolute bottom-0 left-0 right-0 p-5 bg-gradient-to-t from-brand-black via-brand-black/85 to-transparent">
                 <div class="flex items-center justify-between">
                   <div class="flex items-center gap-3">
-                    <img src="https://res.cloudinary.com/aru8btca/image/upload/v1788368826/logo_dhy.png" alt="Logo Dhy" class="h-8 w-8 object-contain" />
+                    <img src="https://res.cloudinary.com/aru8btca/image/upload/v1788368826/logo_dhy.png" alt="" class="h-8 w-8 object-contain" />
                     <div>
                       <h3 class="font-display font-bold text-lg text-white">Edivania Dourado</h3>
                       <p class="text-xs text-brand-green font-medium">Dhy Fotografias • Fotógrafa & Diretora Criativa</p>
@@ -334,7 +334,7 @@
 
 
   <!-- ========================================================= -->
-  <!-- SECÇÃO PORTFÓLIO DE TRABALHOS                             -->
+  <!-- SECÇÃO PORTFÓLIO DE TRABALHOS (COM AS SUAS FOTOS REAIS)   -->
   <!-- ========================================================= -->
   <section id="portfolio" class="py-24 relative">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -346,20 +346,20 @@
           <h2 class="text-3xl sm:text-5xl font-display font-extrabold text-white">Nosso Portfólio</h2>
         </div>
         <p class="text-neutral-400 text-sm max-w-md">
-          Uma seleção de ensaios individuais, casamentos e eventos realizados com sensibilidade e profissionalismo.
+          Uma seleção especial dos nossos ensaios, retratos marcantes, casamentos e eventos realizados com sensibilidade.
         </p>
       </div>
 
-      <!-- Filtros de Categoria (Sem Moda & Editorial) -->
+      <!-- Filtros de Categoria -->
       <div class="flex flex-wrap items-center gap-3 mb-10">
         <button class="filter-btn active px-5 py-2.5 rounded-full text-xs font-bold uppercase tracking-wider bg-brand-green text-brand-black transition-all" data-filter="all">
           Todos os Projetos
         </button>
-        <button class="filter-btn px-5 py-2.5 rounded-full text-xs font-bold uppercase tracking-wider bg-brand-card border border-white/10 text-neutral-300 hover:border-brand-pink hover:text-white transition-all" data-filter="casamento">
-          Casamentos
-        </button>
         <button class="filter-btn px-5 py-2.5 rounded-full text-xs font-bold uppercase tracking-wider bg-brand-card border border-white/10 text-neutral-300 hover:border-brand-pink hover:text-white transition-all" data-filter="retrato">
           Retratos & Ensaio
+        </button>
+        <button class="filter-btn px-5 py-2.5 rounded-full text-xs font-bold uppercase tracking-wider bg-brand-card border border-white/10 text-neutral-300 hover:border-brand-pink hover:text-white transition-all" data-filter="casamento">
+          Casamentos
         </button>
         <button class="filter-btn px-5 py-2.5 rounded-full text-xs font-bold uppercase tracking-wider bg-brand-card border border-white/10 text-neutral-300 hover:border-brand-pink hover:text-white transition-all" data-filter="evento">
           Eventos
@@ -369,7 +369,187 @@
       <!-- Grelha de Imagens do Portfólio -->
       <div id="portfolioGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         
-        <!-- Item 1: Casamento -->
+        <!-- FOTO REAL 1 -->
+        <div class="portfolio-card group relative rounded-2xl overflow-hidden bg-brand-card border border-white/10 cursor-pointer" 
+             data-category="retrato"
+             onclick="abrirLightbox('https://res.cloudinary.com/aru8btca/image/upload/v1788371173/edit014.jpg', 'Ensaio Retrato Marcante', 'Retratos & Ensaio')">
+          <div class="aspect-[4/5] overflow-hidden bg-neutral-900">
+            <img src="https://res.cloudinary.com/aru8btca/image/upload/v1788371173/edit014.jpg" 
+                 alt="" 
+                 class="portfolio-img w-full h-full object-cover">
+          </div>
+          <div class="absolute inset-0 bg-gradient-to-t from-brand-black via-brand-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+            <span class="text-xs font-bold uppercase tracking-wider text-brand-green mb-1">Retratos & Ensaio</span>
+            <h3 class="font-display font-bold text-xl text-white">Ensaio Marcante</h3>
+            <p class="text-xs text-neutral-300 mt-1">Direção de pose e iluminação personalizada.</p>
+            <div class="mt-4 flex items-center gap-2 text-brand-pink text-xs font-bold">
+              <span>Ampliar foto</span>
+              <i class="fa-solid fa-arrow-right text-[10px]"></i>
+            </div>
+          </div>
+        </div>
+
+        <!-- FOTO REAL 2 -->
+        <div class="portfolio-card group relative rounded-2xl overflow-hidden bg-brand-card border border-white/10 cursor-pointer" 
+             data-category="retrato"
+             onclick="abrirLightbox('https://res.cloudinary.com/aru8btca/image/upload/v1788371132/P1390474.jpg', 'Ensaio Externo & Iluminação Natural', 'Retratos & Ensaio')">
+          <div class="aspect-[4/5] overflow-hidden bg-neutral-900">
+            <img src="https://res.cloudinary.com/aru8btca/image/upload/v1788371132/P1390474.jpg" 
+                 alt="" 
+                 class="portfolio-img w-full h-full object-cover">
+          </div>
+          <div class="absolute inset-0 bg-gradient-to-t from-brand-black via-brand-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+            <span class="text-xs font-bold uppercase tracking-wider text-brand-pink mb-1">Retratos & Ensaio</span>
+            <h3 class="font-display font-bold text-xl text-white">Sessão Fotográfica</h3>
+            <p class="text-xs text-neutral-300 mt-1">Expressão autêntica e captura de detalhes únicos.</p>
+            <div class="mt-4 flex items-center gap-2 text-brand-green text-xs font-bold">
+              <span>Ampliar foto</span>
+              <i class="fa-solid fa-arrow-right text-[10px]"></i>
+            </div>
+          </div>
+        </div>
+
+        <!-- FOTO REAL 3 -->
+        <div class="portfolio-card group relative rounded-2xl overflow-hidden bg-brand-card border border-white/10 cursor-pointer" 
+             data-category="retrato"
+             onclick="abrirLightbox('https://res.cloudinary.com/aru8btca/image/upload/v1788371128/P1390493.jpg', 'Retrato & Composição Fotográfica', 'Retratos & Ensaio')">
+          <div class="aspect-[4/5] overflow-hidden bg-neutral-900">
+            <img src="https://res.cloudinary.com/aru8btca/image/upload/v1788371128/P1390493.jpg" 
+                 alt="" 
+                 class="portfolio-img w-full h-full object-cover">
+          </div>
+          <div class="absolute inset-0 bg-gradient-to-t from-brand-black via-brand-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+            <span class="text-xs font-bold uppercase tracking-wider text-brand-green mb-1">Retratos & Ensaio</span>
+            <h3 class="font-display font-bold text-xl text-white">Composição Artística</h3>
+            <p class="text-xs text-neutral-300 mt-1">Cores vivas e acabamento impecável.</p>
+            <div class="mt-4 flex items-center gap-2 text-brand-pink text-xs font-bold">
+              <span>Ampliar foto</span>
+              <i class="fa-solid fa-arrow-right text-[10px]"></i>
+            </div>
+          </div>
+        </div>
+
+        <!-- FOTO REAL 4 -->
+        <div class="portfolio-card group relative rounded-2xl overflow-hidden bg-brand-card border border-white/10 cursor-pointer" 
+             data-category="retrato"
+             onclick="abrirLightbox('https://res.cloudinary.com/aru8btca/image/upload/v1788371127/P1390478.jpg', 'Ensaio Espontâneo & Beleza Real', 'Retratos & Ensaio')">
+          <div class="aspect-[4/5] overflow-hidden bg-neutral-900">
+            <img src="https://res.cloudinary.com/aru8btca/image/upload/v1788371127/P1390478.jpg" 
+                 alt="" 
+                 class="portfolio-img w-full h-full object-cover">
+          </div>
+          <div class="absolute inset-0 bg-gradient-to-t from-brand-black via-brand-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+            <span class="text-xs font-bold uppercase tracking-wider text-brand-pink mb-1">Retratos & Ensaio</span>
+            <h3 class="font-display font-bold text-xl text-white">Ensaio Espontâneo</h3>
+            <p class="text-xs text-neutral-300 mt-1">Momentos leves e poses naturais ao ar livre.</p>
+            <div class="mt-4 flex items-center gap-2 text-brand-green text-xs font-bold">
+              <span>Ampliar foto</span>
+              <i class="fa-solid fa-arrow-right text-[10px]"></i>
+            </div>
+          </div>
+        </div>
+
+        <!-- FOTO REAL 5 -->
+        <div class="portfolio-card group relative rounded-2xl overflow-hidden bg-brand-card border border-white/10 cursor-pointer" 
+             data-category="retrato"
+             onclick="abrirLightbox('https://res.cloudinary.com/aru8btca/image/upload/v1788371127/P1390472.jpg', 'Retrato Individual em Destaque', 'Retratos & Ensaio')">
+          <div class="aspect-[4/5] overflow-hidden bg-neutral-900">
+            <img src="https://res.cloudinary.com/aru8btca/image/upload/v1788371127/P1390472.jpg" 
+                 alt="" 
+                 class="portfolio-img w-full h-full object-cover">
+          </div>
+          <div class="absolute inset-0 bg-gradient-to-t from-brand-black via-brand-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+            <span class="text-xs font-bold uppercase tracking-wider text-brand-green mb-1">Retratos & Ensaio</span>
+            <h3 class="font-display font-bold text-xl text-white">Retrato Individual</h3>
+            <p class="text-xs text-neutral-300 mt-1">Conexão visual e atmosfera acolhedora.</p>
+            <div class="mt-4 flex items-center gap-2 text-brand-pink text-xs font-bold">
+              <span>Ampliar foto</span>
+              <i class="fa-solid fa-arrow-right text-[10px]"></i>
+            </div>
+          </div>
+        </div>
+
+        <!-- FOTO REAL 6 -->
+        <div class="portfolio-card group relative rounded-2xl overflow-hidden bg-brand-card border border-white/10 cursor-pointer" 
+             data-category="retrato"
+             onclick="abrirLightbox('https://res.cloudinary.com/aru8btca/image/upload/v1788371084/edit03.jpg', 'Ensaio Criativo & Expressivo', 'Retratos & Ensaio')">
+          <div class="aspect-[4/5] overflow-hidden bg-neutral-900">
+            <img src="https://res.cloudinary.com/aru8btca/image/upload/v1788371084/edit03.jpg" 
+                 alt="" 
+                 class="portfolio-img w-full h-full object-cover">
+          </div>
+          <div class="absolute inset-0 bg-gradient-to-t from-brand-black via-brand-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+            <span class="text-xs font-bold uppercase tracking-wider text-brand-pink mb-1">Retratos & Ensaio</span>
+            <h3 class="font-display font-bold text-xl text-white">Sessão Criativa</h3>
+            <p class="text-xs text-neutral-300 mt-1">Foco na autenticidade e ângulo perfeito.</p>
+            <div class="mt-4 flex items-center gap-2 text-brand-green text-xs font-bold">
+              <span>Ampliar foto</span>
+              <i class="fa-solid fa-arrow-right text-[10px]"></i>
+            </div>
+          </div>
+        </div>
+
+        <!-- FOTO REAL 7 -->
+        <div class="portfolio-card group relative rounded-2xl overflow-hidden bg-brand-card border border-white/10 cursor-pointer" 
+             data-category="retrato"
+             onclick="abrirLightbox('https://res.cloudinary.com/aru8btca/image/upload/v1788371078/edit04.png', 'Ensaio com Poses Modernas', 'Retratos & Ensaio')">
+          <div class="aspect-[4/5] overflow-hidden bg-neutral-900">
+            <img src="https://res.cloudinary.com/aru8btca/image/upload/v1788371078/edit04.png" 
+                 alt="" 
+                 class="portfolio-img w-full h-full object-cover">
+          </div>
+          <div class="absolute inset-0 bg-gradient-to-t from-brand-black via-brand-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+            <span class="text-xs font-bold uppercase tracking-wider text-brand-green mb-1">Retratos & Ensaio</span>
+            <h3 class="font-display font-bold text-xl text-white">Estilo & Presença</h3>
+            <p class="text-xs text-neutral-300 mt-1">Ensaios que transmitem atitude e carisma.</p>
+            <div class="mt-4 flex items-center gap-2 text-brand-pink text-xs font-bold">
+              <span>Ampliar foto</span>
+              <i class="fa-solid fa-arrow-right text-[10px]"></i>
+            </div>
+          </div>
+        </div>
+
+        <!-- FOTO REAL 8 -->
+        <div class="portfolio-card group relative rounded-2xl overflow-hidden bg-brand-card border border-white/10 cursor-pointer" 
+             data-category="retrato"
+             onclick="abrirLightbox('https://res.cloudinary.com/aru8btca/image/upload/v1788371078/edit_00.jpg', 'Ensaio Pessoal & Marcante', 'Retratos & Ensaio')">
+          <div class="aspect-[4/5] overflow-hidden bg-neutral-900">
+            <img src="https://res.cloudinary.com/aru8btca/image/upload/v1788371078/edit_00.jpg" 
+                 alt="" 
+                 class="portfolio-img w-full h-full object-cover">
+          </div>
+          <div class="absolute inset-0 bg-gradient-to-t from-brand-black via-brand-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+            <span class="text-xs font-bold uppercase tracking-wider text-brand-pink mb-1">Retratos & Ensaio</span>
+            <h3 class="font-display font-bold text-xl text-white">Ensaio Pessoal</h3>
+            <p class="text-xs text-neutral-300 mt-1">Momentos eternizados com alta qualidade.</p>
+            <div class="mt-4 flex items-center gap-2 text-brand-green text-xs font-bold">
+              <span>Ampliar foto</span>
+              <i class="fa-solid fa-arrow-right text-[10px]"></i>
+            </div>
+          </div>
+        </div>
+
+        <!-- FOTO REAL 9 -->
+        <div class="portfolio-card group relative rounded-2xl overflow-hidden bg-brand-card border border-white/10 cursor-pointer" 
+             data-category="retrato"
+             onclick="abrirLightbox('https://res.cloudinary.com/aru8btca/image/upload/v1788371077/edi01.png', 'Retrato Artístico & Iluminação', 'Retratos & Ensaio')">
+          <div class="aspect-[4/5] overflow-hidden bg-neutral-900">
+            <img src="https://res.cloudinary.com/aru8btca/image/upload/v1788371077/edi01.png" 
+                 alt="" 
+                 class="portfolio-img w-full h-full object-cover">
+          </div>
+          <div class="absolute inset-0 bg-gradient-to-t from-brand-black via-brand-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+            <span class="text-xs font-bold uppercase tracking-wider text-brand-green mb-1">Retratos & Ensaio</span>
+            <h3 class="font-display font-bold text-xl text-white">Retrato Artístico</h3>
+            <p class="text-xs text-neutral-300 mt-1">Tratamento de imagem fino e sofisticado.</p>
+            <div class="mt-4 flex items-center gap-2 text-brand-pink text-xs font-bold">
+              <span>Ampliar foto</span>
+              <i class="fa-solid fa-arrow-right text-[10px]"></i>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item Casamento 1 -->
         <div class="portfolio-card group relative rounded-2xl overflow-hidden bg-brand-card border border-white/10 cursor-pointer" 
              data-category="casamento"
              onclick="abrirLightbox('https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1200&q=85', 'Casamento Mariana & Diogo', 'Casamentos')">
@@ -389,67 +569,7 @@
           </div>
         </div>
 
-        <!-- Item 2: Retrato -->
-        <div class="portfolio-card group relative rounded-2xl overflow-hidden bg-brand-card border border-white/10 cursor-pointer" 
-             data-category="retrato"
-             onclick="abrirLightbox('https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=1200&q=85', 'Ensaio Feminino de Retrato', 'Retratos')">
-          <div class="aspect-[4/5] overflow-hidden bg-neutral-900">
-            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=800&q=80" 
-                 alt="" 
-                 class="portfolio-img w-full h-full object-cover">
-          </div>
-          <div class="absolute inset-0 bg-gradient-to-t from-brand-black via-brand-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
-            <span class="text-xs font-bold uppercase tracking-wider text-brand-green mb-1">Retratos</span>
-            <h3 class="font-display font-bold text-xl text-white">Ensaio Feminino & Retrato</h3>
-            <p class="text-xs text-neutral-300 mt-1">Sessão com direção de poses e valorização da beleza real.</p>
-            <div class="mt-4 flex items-center gap-2 text-brand-pink text-xs font-bold">
-              <span>Ampliar foto</span>
-              <i class="fa-solid fa-arrow-right text-[10px]"></i>
-            </div>
-          </div>
-        </div>
-
-        <!-- Item 3: Ensaio ao Ar Livre -->
-        <div class="portfolio-card group relative rounded-2xl overflow-hidden bg-brand-card border border-white/10 cursor-pointer" 
-             data-category="retrato"
-             onclick="abrirLightbox('https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=1200&q=85', 'Ensaio ao Ar Livre', 'Retratos & Ensaio')">
-          <div class="aspect-[4/5] overflow-hidden bg-neutral-900">
-            <img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=800&q=80" 
-                 alt="" 
-                 class="portfolio-img w-full h-full object-cover">
-          </div>
-          <div class="absolute inset-0 bg-gradient-to-t from-brand-black via-brand-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
-            <span class="text-xs font-bold uppercase tracking-wider text-brand-pink mb-1">Retratos & Ensaio</span>
-            <h3 class="font-display font-bold text-xl text-white">Ensaio ao Ar Livre</h3>
-            <p class="text-xs text-neutral-300 mt-1">Cenários abertos e luz natural para composições marcantes.</p>
-            <div class="mt-4 flex items-center gap-2 text-brand-green text-xs font-bold">
-              <span>Ampliar foto</span>
-              <i class="fa-solid fa-arrow-right text-[10px]"></i>
-            </div>
-          </div>
-        </div>
-
-        <!-- Item 4: Retrato Masculino / Corporativo -->
-        <div class="portfolio-card group relative rounded-2xl overflow-hidden bg-brand-card border border-white/10 cursor-pointer" 
-             data-category="retrato"
-             onclick="abrirLightbox('https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=1200&q=85', 'Retrato Corporativo Executivo', 'Retratos')">
-          <div class="aspect-[4/5] overflow-hidden bg-neutral-900">
-            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=800&q=80" 
-                 alt="" 
-                 class="portfolio-img w-full h-full object-cover">
-          </div>
-          <div class="absolute inset-0 bg-gradient-to-t from-brand-black via-brand-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
-            <span class="text-xs font-bold uppercase tracking-wider text-brand-green mb-1">Retratos</span>
-            <h3 class="font-display font-bold text-xl text-white">Posicionamento & Imagem</h3>
-            <p class="text-xs text-neutral-300 mt-1">Fotos para perfis profissionais e posicionamento de marca pessoal.</p>
-            <div class="mt-4 flex items-center gap-2 text-brand-pink text-xs font-bold">
-              <span>Ampliar foto</span>
-              <i class="fa-solid fa-arrow-right text-[10px]"></i>
-            </div>
-          </div>
-        </div>
-
-        <!-- Item 5: Casamento / Casal -->
+        <!-- Item Casamento 2 -->
         <div class="portfolio-card group relative rounded-2xl overflow-hidden bg-brand-card border border-white/10 cursor-pointer" 
              data-category="casamento"
              onclick="abrirLightbox('https://images.unsplash.com/photo-1583939003579-730e3918a45a?auto=format&fit=crop&w=1200&q=85', 'Ensaio Pré-Wedding / Casal', 'Casamentos')">
@@ -469,7 +589,7 @@
           </div>
         </div>
 
-        <!-- Item 6: Evento -->
+        <!-- Item Evento 1 -->
         <div class="portfolio-card group relative rounded-2xl overflow-hidden bg-brand-card border border-white/10 cursor-pointer" 
              data-category="evento"
              onclick="abrirLightbox('https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&w=1200&q=85', 'Cobertura de Festas e Eventos', 'Eventos')">
@@ -733,7 +853,7 @@
         <div class="lg:col-span-6 bg-brand-card p-8 sm:p-10 rounded-3xl border border-white/10 text-center">
           <div class="w-20 h-20 mx-auto rounded-2xl gradient-border-glow p-0.5 mb-6">
             <div class="w-full h-full bg-brand-black rounded-2xl flex items-center justify-center p-2">
-              <img src="https://res.cloudinary.com/aru8btca/image/upload/v1788368826/logo_dhy.png" alt="Logo Dhy Fotografias" class="max-h-full max-w-full object-contain" />
+              <img src="https://res.cloudinary.com/aru8btca/image/upload/v1788368826/logo_dhy.png" alt="" class="max-h-full max-w-full object-contain" />
             </div>
           </div>
           
@@ -785,7 +905,7 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-6">
       
       <div class="flex items-center gap-3">
-        <img src="https://res.cloudinary.com/aru8btca/image/upload/v1788368826/logo_dhy.png" alt="Dhy Fotografias" class="h-7 w-auto object-contain" />
+        <img src="https://res.cloudinary.com/aru8btca/image/upload/v1788368826/logo_dhy.png" alt="" class="h-7 w-auto object-contain" />
         <span class="font-display font-bold text-white tracking-wider text-sm">DHY FOTOGRAFIAS</span>
         <span>•</span>
         <span>Todos os direitos reservados &copy; <span id="currentYear"></span></span>
@@ -808,4 +928,204 @@
      target="_blank" 
      rel="noopener noreferrer"
      aria-label="Conversar pelo WhatsApp"
-     class="fixed bottom-6 right-6
+     class="fixed bottom-6 right-6 z-40 w-14 h-14 bg-brand-green text-brand-black rounded-full flex items-center justify-center text-2xl shadow-2xl hover:scale-110 hover:bg-white hover:text-brand-green transition-all duration-300 group">
+    <span class="absolute -top-1 -right-1 flex h-4 w-4">
+      <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-brand-pink opacity-75"></span>
+      <span class="relative inline-flex rounded-full h-4 w-4 bg-brand-pink"></span>
+    </span>
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+
+  <!-- ========================================================= -->
+  <!-- MODAL DE LIGHTBOX PARA VISUALIZAÇÃO DE FOTOS              -->
+  <!-- ========================================================= -->
+  <div id="lightboxModal" class="fixed inset-0 z-50 bg-black/95 backdrop-blur-md hidden flex items-center justify-center p-4">
+    <button onclick="fecharLightbox()" class="absolute top-6 right-6 text-white/80 hover:text-brand-pink text-3xl transition-colors z-10" title="Fechar visualização">
+      <i class="fa-solid fa-xmark"></i>
+    </button>
+    
+    <div class="max-w-5xl max-h-[90vh] flex flex-col items-center">
+      <img id="lightboxImg" src="" alt="" class="max-h-[75vh] w-auto object-contain rounded-xl shadow-2xl border border-white/10" />
+      <div class="mt-4 text-center">
+        <span id="lightboxBadge" class="text-xs font-bold uppercase tracking-widest text-brand-green"></span>
+        <h4 id="lightboxTitle" class="text-lg font-display font-bold text-white mt-1"></h4>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ========================================================= -->
+  <!-- CAIXA DE MENSAGEM / NOTIFICAÇÃO TOAST                     -->
+  <!-- ========================================================= -->
+  <div id="toastNotification" class="fixed bottom-6 left-6 z-50 bg-brand-card border border-brand-green text-white px-5 py-3 rounded-2xl shadow-2xl flex items-center gap-3 transition-all duration-300 transform translate-y-24 opacity-0 pointer-events-none">
+    <i class="fa-solid fa-circle-check text-brand-green text-lg" id="toastIcon"></i>
+    <span id="toastMessage" class="text-xs font-semibold">Mensagem copiada com sucesso!</span>
+  </div>
+
+
+  <!-- ========================================================= -->
+  <!-- JAVASCRIPT DE CONTROLO E INTERATIVIDADE                   -->
+  <!-- ========================================================= -->
+  <script>
+    // Atualizar o ano do copyright automaticamente
+    document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+    // Menu Mobile Toggle
+    const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    const mobileLinks = document.querySelectorAll('.mobile-link');
+
+    mobileMenuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    mobileLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.add('hidden');
+      });
+    });
+
+    // Filtros da Galeria de Portfólio
+    const filterButtons = document.querySelectorAll('.filter-btn');
+    const portfolioCards = document.querySelectorAll('.portfolio-card');
+
+    filterButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        // Atualizar estado ativo dos botões
+        filterButtons.forEach(b => {
+          b.classList.remove('bg-brand-green', 'text-brand-black');
+          b.classList.add('bg-brand-card', 'text-neutral-300');
+        });
+        btn.classList.add('bg-brand-green', 'text-brand-black');
+        btn.classList.remove('bg-brand-card', 'text-neutral-300');
+
+        const filterValue = btn.getAttribute('data-filter');
+
+        portfolioCards.forEach(card => {
+          if (filterValue === 'all' || card.getAttribute('data-category') === filterValue) {
+            card.style.display = 'block';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      });
+    });
+
+    // Função para abrir o Lightbox
+    function abrirLightbox(src, title, category) {
+      const modal = document.getElementById('lightboxModal');
+      const img = document.getElementById('lightboxImg');
+      const titleElem = document.getElementById('lightboxTitle');
+      const badgeElem = document.getElementById('lightboxBadge');
+
+      img.src = src;
+      titleElem.textContent = title;
+      badgeElem.textContent = category;
+
+      modal.classList.remove('hidden');
+      document.body.style.overflow = 'hidden';
+    }
+
+    // Função para fechar o Lightbox
+    function fecharLightbox() {
+      const modal = document.getElementById('lightboxModal');
+      modal.classList.add('hidden');
+      document.body.style.overflow = 'auto';
+    }
+
+    // Fechar ao clicar fora da imagem
+    document.getElementById('lightboxModal').addEventListener('click', (e) => {
+      if (e.target.id === 'lightboxModal') {
+        fecharLightbox();
+      }
+    });
+
+    // Tecla ESC fecha o lightbox
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') fecharLightbox();
+    });
+
+    // Copiar número de telefone para a área de transferência
+    function copiarTelefone(num) {
+      const tempInput = document.createElement('input');
+      tempInput.value = num;
+      document.body.appendChild(tempInput);
+      tempInput.select();
+      document.execCommand('copy');
+      document.body.removeChild(tempInput);
+      mostrarNotificacao('Telefone copiado para a área de transferência!');
+    }
+
+    // Pré-selecionar serviço no formulário ao clicar nos cartões
+    function selecionarServico(nomeServico) {
+      const select = document.getElementById('tipoTrabalho');
+      for (let i = 0; i < select.options.length; i++) {
+        if (select.options[i].text.toLowerCase().includes(nomeServico.toLowerCase()) || 
+            select.options[i].value.toLowerCase().includes(nomeServico.toLowerCase())) {
+          select.selectedIndex = i;
+          break;
+        }
+      }
+      document.getElementById('orcamento').scrollIntoView({ behavior: 'smooth' });
+      document.getElementById('nomeCliente').focus();
+    }
+
+    // Enviar pedido de orçamento via WhatsApp
+    function enviarOrcamentoWhatsApp(event) {
+      event.preventDefault();
+      
+      const nome = document.getElementById('nomeCliente').value;
+      const tel = document.getElementById('telefoneCliente').value;
+      const tipo = document.getElementById('tipoTrabalho').value;
+      const data = document.getElementById('dataPrevista').value || 'A combinar';
+      const detalhes = document.getElementById('mensagemDetalhes').value || 'Sem notas adicionais';
+
+      const texto = `*NOVO PEDIDO DE ORÇAMENTO - DHY FOTOGRAFIAS*%0A%0A` +
+                    `👤 *Nome:* ${encodeURIComponent(nome)}%0A` +
+                    `📱 *Contato:* ${encodeURIComponent(tel)}%0A` +
+                    `📷 *Tipo de Trabalho:* ${encodeURIComponent(tipo)}%0A` +
+                    `📅 *Data Prevista:* ${encodeURIComponent(data)}%0A` +
+                    `📝 *Detalhes:* ${encodeURIComponent(detalhes)}%0A%0A` +
+                    `Gostaria de saber a sua disponibilidade e valores.`;
+
+      const numeroWhatsAppStudio = "5562998167124";
+      window.open(`https://wa.me/${numeroWhatsAppStudio}?text=${texto}`, '_blank');
+      
+      mostrarNotificacao('Abrindo WhatsApp...');
+    }
+
+    // Enviar pedido de orçamento via E-mail
+    function enviarViaEmail() {
+      const nome = document.getElementById('nomeCliente').value || 'Cliente';
+      const tel = document.getElementById('telefoneCliente').value || 'Não informado';
+      const tipo = document.getElementById('tipoTrabalho').value;
+      const data = document.getElementById('dataPrevista').value || 'A combinar';
+      const detalhes = document.getElementById('mensagemDetalhes').value || '';
+
+      const assunto = encodeURIComponent(`Pedido de Orçamento - ${tipo} - ${nome}`);
+      const corpo = encodeURIComponent(
+        `Olá Dhy Fotografias,\n\nGostaria de solicitar um orçamento para:\n\n` +
+        `Nome: ${nome}\nTelefone: ${tel}\nTipo de Ensaio: ${tipo}\nData Prevista: ${data}\nDetalhes: ${detalhes}\n\nAguardo seu retorno!`
+      );
+
+      window.location.href = `mailto:eyshilagabi2017@gmail.com?subject=${assunto}&body=${corpo}`;
+    }
+
+    // Mostrar caixa de notificação Toast
+    function mostrarNotificacao(texto) {
+      const toast = document.getElementById('toastNotification');
+      const msg = document.getElementById('toastMessage');
+      msg.textContent = texto;
+
+      toast.classList.remove('translate-y-24', 'opacity-0', 'pointer-events-none');
+      toast.classList.add('translate-y-0', 'opacity-100');
+
+      setTimeout(() => {
+        toast.classList.add('translate-y-24', 'opacity-0', 'pointer-events-none');
+        toast.classList.remove('translate-y-0', 'opacity-100');
+      }, 4000);
+    }
+  </script>
+</body>
+</html>
