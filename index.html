@@ -126,4 +126,686 @@
     </div>
 
     <!-- Dropdown Mobile -->
-    <div id="mobileMenu" class="hidden md:hidden
+    <div id="mobileMenu" class="hidden md:hidden bg-brand-dark border-b border-white/10 px-6 py-6 space-y-4">
+      <a href="#inicio" class="block text-white font-medium hover:text-brand-pink mobile-link">Início</a>
+      <a href="#sobre" class="block text-neutral-300 font-medium hover:text-brand-pink mobile-link">Sobre</a>
+      <a href="#portfolio" class="block text-neutral-300 font-medium hover:text-brand-green mobile-link">Portfólio</a>
+      <a href="#orcamento" class="block text-neutral-300 font-medium hover:text-brand-pink mobile-link">Orçamento</a>
+      <a href="#contactos" class="block text-neutral-300 font-medium hover:text-brand-green mobile-link">Contactos</a>
+      <div class="pt-4 border-t border-white/10 flex flex-col gap-3">
+        <a href="tel:+5562998167124" class="flex items-center gap-3 text-brand-green font-semibold">
+          <i class="fa-solid fa-phone"></i> (62) 99816-7124
+        </a>
+        <a href="https://wa.me/5562998167124" target="_blank" class="w-full text-center bg-brand-pink text-white font-bold py-3 rounded-xl hover:bg-brand-pink-dark transition-all">
+          Solicitar Orçamento
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ========================================================= -->
+  <!-- SECÇÃO HERO COM DADOS, TELEFONE E FOTO PROFISSIONAL       -->
+  <!-- ========================================================= -->
+  <section id="inicio" class="relative pt-32 pb-20 md:pt-44 md:pb-32 overflow-hidden">
+    <!-- Luzes de fundo atmosféricas -->
+    <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-brand-pink/15 rounded-full blur-3xl pointer-events-none"></div>
+    <div class="absolute bottom-10 right-10 w-96 h-96 bg-brand-green/15 rounded-full blur-3xl pointer-events-none"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+        
+        <!-- Texto & Apresentação (Hero Left) -->
+        <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+          
+          <!-- Badge de Disponibilidade -->
+          <div class="inline-flex items-center gap-2.5 px-4 py-2 rounded-full bg-white/5 border border-white/10 backdrop-blur-sm">
+            <span class="w-2.5 h-2.5 rounded-full bg-brand-green animate-pulse"></span>
+            <span class="text-xs font-semibold uppercase tracking-wider text-neutral-300">Agenda Aberta • Sessões Exclusivas</span>
+          </div>
+
+          <!-- Título Principal -->
+          <h1 class="text-4xl sm:text-5xl md:text-6xl font-display font-extrabold tracking-tight leading-none text-white">
+            Capturamos a <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-pink via-white to-brand-green">essência</span> dos seus momentos mais únicos.
+          </h1>
+
+          <!-- Descrição Personalizada -->
+          <p class="text-base sm:text-lg text-neutral-300 max-w-2xl mx-auto lg:mx-0 font-light leading-relaxed">
+            <strong class="text-white font-semibold">Edivania Dourado | Dhy Fotografias</strong> 📸 Especialista em ensaios marcantes, casamentos emocionantes, ensaios ao ar livre e momentos que merecem ser eternizados. ✨
+          </p>
+
+          <!-- Bloco em Destaque: Telefone / WhatsApp Direto -->
+          <div class="p-4 sm:p-5 rounded-2xl bg-brand-card/90 border border-white/10 max-w-xl mx-auto lg:mx-0 shadow-2xl backdrop-blur-sm">
+            <div class="flex flex-col sm:flex-row items-center justify-between gap-4">
+              
+              <div class="flex items-center gap-3 text-left">
+                <div class="w-12 h-12 rounded-xl bg-brand-green/20 text-brand-green flex items-center justify-center text-xl shrink-0">
+                  <i class="fa-solid fa-phone-volume"></i>
+                </div>
+                <div>
+                  <span class="text-xs text-neutral-400 block uppercase font-medium">Telefone / WhatsApp</span>
+                  <a href="tel:+5562998167124" class="text-lg font-bold text-white hover:text-brand-green transition-colors tracking-wide">
+                    (62) 99816-7124
+                  </a>
+                </div>
+              </div>
+
+              <!-- Botão Copiar / WhatsApp -->
+              <div class="flex items-center gap-2 w-full sm:w-auto">
+                <button onclick="copiarTelefone('(62) 99816-7124')" class="flex-1 sm:flex-none px-4 py-2.5 rounded-xl bg-white/10 hover:bg-white/20 text-xs font-semibold text-white transition-all flex items-center justify-center gap-2" title="Copiar número">
+                  <i class="fa-regular fa-copy"></i>
+                  <span>Copiar</span>
+                </button>
+                <a href="https://wa.me/5562998167124" target="_blank" class="flex-1 sm:flex-none px-4 py-2.5 rounded-xl bg-brand-green hover:bg-brand-green-dark text-brand-black text-xs font-bold transition-all flex items-center justify-center gap-2">
+                  <i class="fa-brands fa-whatsapp text-sm"></i>
+                  <span>WhatsApp</span>
+                </a>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- CTAs e Redes Sociais Rápidas -->
+          <div class="pt-2 flex flex-wrap items-center justify-center lg:justify-start gap-4">
+            <a href="#portfolio" class="px-8 py-4 rounded-full bg-brand-pink text-white font-bold text-sm uppercase tracking-wider hover:bg-brand-pink-dark hover:scale-105 hover:shadow-lg hover:shadow-brand-pink/30 transition-all">
+              Ver Portfólio
+            </a>
+            <a href="#orcamento" class="px-8 py-4 rounded-full border border-white/20 bg-white/5 text-white font-bold text-sm uppercase tracking-wider hover:bg-white/10 hover:border-brand-green hover:text-brand-green transition-all">
+              Pedir Orçamento
+            </a>
+          </div>
+
+          <!-- Mini Estatísticas -->
+          <div class="grid grid-cols-3 gap-4 pt-6 border-t border-white/10 max-w-lg mx-auto lg:mx-0">
+            <div>
+              <p class="text-2xl sm:text-3xl font-display font-extrabold text-brand-pink">+ de 3 Anos</p>
+              <p class="text-xs text-neutral-400 uppercase tracking-wider">De Experiência</p>
+            </div>
+            <div>
+              <p class="text-2xl sm:text-3xl font-display font-extrabold text-brand-green">+200</p>
+              <p class="text-xs text-neutral-400 uppercase tracking-wider">Sessões Realizadas</p>
+            </div>
+            <div>
+              <p class="text-2xl sm:text-3xl font-display font-extrabold text-white">100%</p>
+              <p class="text-xs text-neutral-400 uppercase tracking-wider">Dedicação</p>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Foto Profissional Personalizada (Hero Right) -->
+        <div class="lg:col-span-5 flex justify-center">
+          <div class="relative w-full max-w-md">
+            
+            <!-- Moldura Decorativa com Gradiente Rosa & Verde -->
+            <div class="absolute -inset-2 bg-gradient-to-tr from-brand-pink via-brand-green to-brand-pink rounded-3xl blur-md opacity-75 group-hover:opacity-100 transition duration-1000"></div>
+
+            <div class="relative rounded-2xl overflow-hidden bg-brand-dark border-2 border-white/20 shadow-2xl">
+              <!-- Foto Profissional Atualizada -->
+              <img 
+                src="https://res.cloudinary.com/aru8btca/image/upload/v1788369211/fotoooooo.jpg" 
+                alt="" 
+                class="w-full h-[480px] object-cover object-center hover:scale-105 transition-all duration-700"
+                onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1554048612-b6a482bc67e5?auto=format&fit=crop&w=800&q=80';"
+              />
+
+              <!-- Tarjeta Flutuante Sobre a Foto com Logomarca Integrada -->
+              <div class="absolute bottom-0 left-0 right-0 p-5 bg-gradient-to-t from-brand-black via-brand-black/85 to-transparent">
+                <div class="flex items-center justify-between">
+                  <div class="flex items-center gap-3">
+                    <img src="https://res.cloudinary.com/aru8btca/image/upload/v1788368826/logo_dhy.png" alt="Logo Dhy" class="h-8 w-8 object-contain" />
+                    <div>
+                      <h3 class="font-display font-bold text-lg text-white">Edivania Dourado</h3>
+                      <p class="text-xs text-brand-green font-medium">Dhy Fotografias • Fotógrafa & Diretora Criativa</p>
+                    </div>
+                  </div>
+                  <div class="hidden sm:flex items-center gap-1.5 bg-black/60 px-3 py-1.5 rounded-full border border-white/10">
+                    <i class="fa-solid fa-award text-brand-pink text-xs"></i>
+                    <span class="text-[10px] font-bold tracking-wider text-neutral-200">PROFISSIONAL</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Crachá Flutuante de Avaliação -->
+            <div class="absolute -bottom-5 -right-4 bg-brand-card border border-white/15 px-4 py-3 rounded-2xl shadow-xl flex items-center gap-3 backdrop-blur-lg">
+              <div class="w-10 h-10 rounded-xl bg-brand-pink/20 text-brand-pink flex items-center justify-center font-bold">
+                <i class="fa-solid fa-star text-sm"></i>
+              </div>
+              <div>
+                <div class="flex text-brand-green text-xs">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <p class="text-[11px] text-neutral-300 font-semibold mt-0.5">5.0 Estrelas • Clientes Felizes</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ========================================================= -->
+  <!-- SECÇÃO SOBRE NÓS / DIFERENCIAIS                           -->
+  <!-- ========================================================= -->
+  <section id="sobre" class="py-20 bg-brand-dark/50 border-y border-white/5 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="text-xs font-bold uppercase tracking-widest text-brand-pink block mb-2">Porquê Escolher Dhy Fotografias</span>
+        <h2 class="text-3xl sm:text-4xl font-display font-bold text-white">
+          Sensibilidade artística, direção atenciosa e alta qualidade.
+        </h2>
+      </div>
+
+      <!-- Diferenciais em grelha de 2 colunas equilibrada -->
+      <div class="grid grid-cols-1 md:grid-cols-2 max-w-4xl mx-auto gap-8">
+        
+        <!-- Cartão 1: Edição & Retoque Fino -->
+        <div class="p-8 rounded-2xl bg-brand-card border border-white/10 hover:border-brand-pink transition-all duration-300 hover:-translate-y-1">
+          <div class="w-14 h-14 rounded-2xl bg-brand-pink/10 border border-brand-pink/30 flex items-center justify-center text-brand-pink text-2xl mb-6">
+            <i class="fa-solid fa-wand-magic-sparkles"></i>
+          </div>
+          <h3 class="font-display font-bold text-xl text-white mb-3">Edição & Retoque Fino</h3>
+          <p class="text-sm text-neutral-400 leading-relaxed">
+            Tratamento de cores impecável e correção de detalhes com acabamento natural e sofisticado em cada clique.
+          </p>
+        </div>
+
+        <!-- Cartão 2: Entrega Digital Rápida -->
+        <div class="p-8 rounded-2xl bg-brand-card border border-white/10 hover:border-brand-green transition-all duration-300 hover:-translate-y-1">
+          <div class="w-14 h-14 rounded-2xl bg-brand-green/10 border border-brand-green/30 flex items-center justify-center text-brand-green text-2xl mb-6">
+            <i class="fa-solid fa-cloud-arrow-down"></i>
+          </div>
+          <h3 class="font-display font-bold text-xl text-white mb-3">Entrega Digital Rápida</h3>
+          <p class="text-sm text-neutral-400 leading-relaxed">
+            Receba as fotos tratadas em link digital exclusivo para download em alta resolução com total comodidade.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ========================================================= -->
+  <!-- SECÇÃO PORTFÓLIO DE TRABALHOS                             -->
+  <!-- ========================================================= -->
+  <section id="portfolio" class="py-24 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Cabeçalho da Secção -->
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
+        <div>
+          <span class="text-xs font-bold uppercase tracking-widest text-brand-green block mb-2">Trabalhos Realizados</span>
+          <h2 class="text-3xl sm:text-5xl font-display font-extrabold text-white">Nosso Portfólio</h2>
+        </div>
+        <p class="text-neutral-400 text-sm max-w-md">
+          Uma seleção de ensaios individuais, casamentos e eventos realizados com sensibilidade e profissionalismo.
+        </p>
+      </div>
+
+      <!-- Filtros de Categoria (Sem Moda & Editorial) -->
+      <div class="flex flex-wrap items-center gap-3 mb-10">
+        <button class="filter-btn active px-5 py-2.5 rounded-full text-xs font-bold uppercase tracking-wider bg-brand-green text-brand-black transition-all" data-filter="all">
+          Todos os Projetos
+        </button>
+        <button class="filter-btn px-5 py-2.5 rounded-full text-xs font-bold uppercase tracking-wider bg-brand-card border border-white/10 text-neutral-300 hover:border-brand-pink hover:text-white transition-all" data-filter="casamento">
+          Casamentos
+        </button>
+        <button class="filter-btn px-5 py-2.5 rounded-full text-xs font-bold uppercase tracking-wider bg-brand-card border border-white/10 text-neutral-300 hover:border-brand-pink hover:text-white transition-all" data-filter="retrato">
+          Retratos & Ensaio
+        </button>
+        <button class="filter-btn px-5 py-2.5 rounded-full text-xs font-bold uppercase tracking-wider bg-brand-card border border-white/10 text-neutral-300 hover:border-brand-pink hover:text-white transition-all" data-filter="evento">
+          Eventos
+        </button>
+      </div>
+
+      <!-- Grelha de Imagens do Portfólio -->
+      <div id="portfolioGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        
+        <!-- Item 1: Casamento -->
+        <div class="portfolio-card group relative rounded-2xl overflow-hidden bg-brand-card border border-white/10 cursor-pointer" 
+             data-category="casamento"
+             onclick="abrirLightbox('https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1200&q=85', 'Casamento Mariana & Diogo', 'Casamentos')">
+          <div class="aspect-[4/5] overflow-hidden bg-neutral-900">
+            <img src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=800&q=80" 
+                 alt="" 
+                 class="portfolio-img w-full h-full object-cover">
+          </div>
+          <div class="absolute inset-0 bg-gradient-to-t from-brand-black via-brand-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+            <span class="text-xs font-bold uppercase tracking-wider text-brand-pink mb-1">Casamentos</span>
+            <h3 class="font-display font-bold text-xl text-white">Ensaio de Casamento</h3>
+            <p class="text-xs text-neutral-300 mt-1">Sessão completa e espontânea ao ar livre com luz natural.</p>
+            <div class="mt-4 flex items-center gap-2 text-brand-green text-xs font-bold">
+              <span>Ampliar foto</span>
+              <i class="fa-solid fa-arrow-right text-[10px]"></i>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 2: Retrato -->
+        <div class="portfolio-card group relative rounded-2xl overflow-hidden bg-brand-card border border-white/10 cursor-pointer" 
+             data-category="retrato"
+             onclick="abrirLightbox('https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=1200&q=85', 'Ensaio Feminino de Retrato', 'Retratos')">
+          <div class="aspect-[4/5] overflow-hidden bg-neutral-900">
+            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=800&q=80" 
+                 alt="" 
+                 class="portfolio-img w-full h-full object-cover">
+          </div>
+          <div class="absolute inset-0 bg-gradient-to-t from-brand-black via-brand-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+            <span class="text-xs font-bold uppercase tracking-wider text-brand-green mb-1">Retratos</span>
+            <h3 class="font-display font-bold text-xl text-white">Ensaio Feminino & Retrato</h3>
+            <p class="text-xs text-neutral-300 mt-1">Sessão com direção de poses e valorização da beleza real.</p>
+            <div class="mt-4 flex items-center gap-2 text-brand-pink text-xs font-bold">
+              <span>Ampliar foto</span>
+              <i class="fa-solid fa-arrow-right text-[10px]"></i>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 3: Ensaio ao Ar Livre -->
+        <div class="portfolio-card group relative rounded-2xl overflow-hidden bg-brand-card border border-white/10 cursor-pointer" 
+             data-category="retrato"
+             onclick="abrirLightbox('https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=1200&q=85', 'Ensaio ao Ar Livre', 'Retratos & Ensaio')">
+          <div class="aspect-[4/5] overflow-hidden bg-neutral-900">
+            <img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=800&q=80" 
+                 alt="" 
+                 class="portfolio-img w-full h-full object-cover">
+          </div>
+          <div class="absolute inset-0 bg-gradient-to-t from-brand-black via-brand-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+            <span class="text-xs font-bold uppercase tracking-wider text-brand-pink mb-1">Retratos & Ensaio</span>
+            <h3 class="font-display font-bold text-xl text-white">Ensaio ao Ar Livre</h3>
+            <p class="text-xs text-neutral-300 mt-1">Cenários abertos e luz natural para composições marcantes.</p>
+            <div class="mt-4 flex items-center gap-2 text-brand-green text-xs font-bold">
+              <span>Ampliar foto</span>
+              <i class="fa-solid fa-arrow-right text-[10px]"></i>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 4: Retrato Masculino / Corporativo -->
+        <div class="portfolio-card group relative rounded-2xl overflow-hidden bg-brand-card border border-white/10 cursor-pointer" 
+             data-category="retrato"
+             onclick="abrirLightbox('https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=1200&q=85', 'Retrato Corporativo Executivo', 'Retratos')">
+          <div class="aspect-[4/5] overflow-hidden bg-neutral-900">
+            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=800&q=80" 
+                 alt="" 
+                 class="portfolio-img w-full h-full object-cover">
+          </div>
+          <div class="absolute inset-0 bg-gradient-to-t from-brand-black via-brand-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+            <span class="text-xs font-bold uppercase tracking-wider text-brand-green mb-1">Retratos</span>
+            <h3 class="font-display font-bold text-xl text-white">Posicionamento & Imagem</h3>
+            <p class="text-xs text-neutral-300 mt-1">Fotos para perfis profissionais e posicionamento de marca pessoal.</p>
+            <div class="mt-4 flex items-center gap-2 text-brand-pink text-xs font-bold">
+              <span>Ampliar foto</span>
+              <i class="fa-solid fa-arrow-right text-[10px]"></i>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 5: Casamento / Casal -->
+        <div class="portfolio-card group relative rounded-2xl overflow-hidden bg-brand-card border border-white/10 cursor-pointer" 
+             data-category="casamento"
+             onclick="abrirLightbox('https://images.unsplash.com/photo-1583939003579-730e3918a45a?auto=format&fit=crop&w=1200&q=85', 'Ensaio Pré-Wedding / Casal', 'Casamentos')">
+          <div class="aspect-[4/5] overflow-hidden bg-neutral-900">
+            <img src="https://images.unsplash.com/photo-1583939003579-730e3918a45a?auto=format&fit=crop&w=800&q=80" 
+                 alt="" 
+                 class="portfolio-img w-full h-full object-cover">
+          </div>
+          <div class="absolute inset-0 bg-gradient-to-t from-brand-black via-brand-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+            <span class="text-xs font-bold uppercase tracking-wider text-brand-pink mb-1">Casamentos</span>
+            <h3 class="font-display font-bold text-xl text-white">Sessão Pré-Wedding</h3>
+            <p class="text-xs text-neutral-300 mt-1">Momentos de carinho genuíno e conexão entre casais.</p>
+            <div class="mt-4 flex items-center gap-2 text-brand-green text-xs font-bold">
+              <span>Ampliar foto</span>
+              <i class="fa-solid fa-arrow-right text-[10px]"></i>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 6: Evento -->
+        <div class="portfolio-card group relative rounded-2xl overflow-hidden bg-brand-card border border-white/10 cursor-pointer" 
+             data-category="evento"
+             onclick="abrirLightbox('https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&w=1200&q=85', 'Cobertura de Festas e Eventos', 'Eventos')">
+          <div class="aspect-[4/5] overflow-hidden bg-neutral-900">
+            <img src="https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&w=800&q=80" 
+                 alt="" 
+                 class="portfolio-img w-full h-full object-cover">
+          </div>
+          <div class="absolute inset-0 bg-gradient-to-t from-brand-black via-brand-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+            <span class="text-xs font-bold uppercase tracking-wider text-brand-green mb-1">Eventos</span>
+            <h3 class="font-display font-bold text-xl text-white">Eventos & Comemorações</h3>
+            <p class="text-xs text-neutral-300 mt-1">Cobertura dinâmica para eternizar os melhores momentos.</p>
+            <div class="mt-4 flex items-center gap-2 text-brand-pink text-xs font-bold">
+              <span>Ampliar foto</span>
+              <i class="fa-solid fa-arrow-right text-[10px]"></i>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ========================================================= -->
+  <!-- SECÇÃO DE SERVIÇOS & ORÇAMENTO A COMBINAR                -->
+  <!-- ========================================================= -->
+  <section id="orcamento" class="py-24 bg-brand-dark/70 border-t border-white/10 relative">
+    
+    <!-- Luzes de fundo -->
+    <div class="absolute top-1/2 left-0 w-80 h-80 bg-brand-green/10 rounded-full blur-3xl pointer-events-none"></div>
+    <div class="absolute bottom-0 right-0 w-80 h-80 bg-brand-pink/10 rounded-full blur-3xl pointer-events-none"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="text-xs font-bold uppercase tracking-widest text-brand-pink block mb-2">Preços & Propostas</span>
+        <h2 class="text-3xl sm:text-5xl font-display font-extrabold text-white">
+          Orçamento a Combinar
+        </h2>
+        <p class="text-neutral-300 text-sm sm:text-base mt-4">
+          Cada projeto é único. O valor é <strong class="text-brand-green font-semibold">100% a combinar</strong> de acordo com a quantidade de fotos, tempo de sessão e local escolhido.
+        </p>
+      </div>
+
+      <!-- Tipos de Pacotes com Orçamento a Combinar -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+        
+        <!-- Pacote 1 -->
+        <div class="bg-brand-card p-8 rounded-3xl border border-white/10 hover:border-brand-pink/60 transition-all flex flex-col justify-between relative group">
+          <div>
+            <span class="inline-block px-3 py-1 rounded-full bg-brand-pink/10 text-brand-pink text-xs font-bold uppercase tracking-wider mb-4">
+              Individual / Ensaio
+            </span>
+            <h3 class="font-display font-bold text-2xl text-white mb-2">Ensaio Fotográfico</h3>
+            <p class="text-xs text-neutral-400 mb-6">Ideal para ensaios individuais, aniversários, gestantes ou redes sociais.</p>
+            
+            <div class="py-4 my-2 border-y border-white/10">
+              <span class="text-xs text-neutral-400 block uppercase">Investimento</span>
+              <span class="text-2xl font-display font-bold text-brand-pink">A Combinar</span>
+              <span class="text-[11px] text-neutral-400 block mt-1">Conforme número de fotos e horas</span>
+            </div>
+
+            <ul class="space-y-3 text-xs text-neutral-300 my-6">
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-green"></i> Local externo ou estúdio</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-green"></i> Orientação e direção de poses</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-green"></i> Fotos tratadas em alta resolução</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-green"></i> Entrega digital segura</li>
+            </ul>
+          </div>
+
+          <button onclick="selecionarServico('Ensaio Fotográfico')" class="w-full py-3.5 rounded-xl bg-white/10 hover:bg-brand-pink text-white font-bold text-xs uppercase tracking-wider transition-all">
+            Consultar Este Plano
+          </button>
+        </div>
+
+        <!-- Pacote 2 (Destaque Casamento) -->
+        <div class="bg-brand-card p-8 rounded-3xl border-2 border-brand-green relative flex flex-col justify-between shadow-2xl glow-green">
+          <div class="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-brand-green text-brand-black px-4 py-1 rounded-full text-[11px] font-extrabold uppercase tracking-wider shadow">
+            Mais Procurado
+          </div>
+          <div>
+            <span class="inline-block px-3 py-1 rounded-full bg-brand-green/20 text-brand-green text-xs font-bold uppercase tracking-wider mb-4">
+              Momentos Especiais
+            </span>
+            <h3 class="font-display font-bold text-2xl text-white mb-2">Casamentos & Noivados</h3>
+            <p class="text-xs text-neutral-400 mb-6">Cobertura completa, pré-wedding ou cerimónias intimistas.</p>
+            
+            <div class="py-4 my-2 border-y border-white/10">
+              <span class="text-xs text-neutral-400 block uppercase">Investimento</span>
+              <span class="text-2xl font-display font-bold text-brand-green">Sob Consulta</span>
+              <span class="text-[11px] text-neutral-400 block mt-1">Pacotes adaptados às necessidades dos noivos</span>
+            </div>
+
+            <ul class="space-y-3 text-xs text-neutral-300 my-6">
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-green"></i> Making of da noiva / noivo</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-green"></i> Cerimónia e receção</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-green"></i> Fotos espontâneas e protocolares</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-green"></i> Galeria online completa</li>
+            </ul>
+          </div>
+
+          <button onclick="selecionarServico('Casamentos e Noivados')" class="w-full py-3.5 rounded-xl bg-brand-green hover:bg-brand-green-dark text-brand-black font-extrabold text-xs uppercase tracking-wider transition-all">
+            Pedir Proposta de Casamento
+          </button>
+        </div>
+
+        <!-- Pacote 3 -->
+        <div class="bg-brand-card p-8 rounded-3xl border border-white/10 hover:border-brand-pink/60 transition-all flex flex-col justify-between relative group">
+          <div>
+            <span class="inline-block px-3 py-1 rounded-full bg-brand-pink/10 text-brand-pink text-xs font-bold uppercase tracking-wider mb-4">
+              Eventos & Festas
+            </span>
+            <h3 class="font-display font-bold text-2xl text-white mb-2">Eventos & Comemorações</h3>
+            <p class="text-xs text-neutral-400 mb-6">Aniversários, festas temáticas e encontros especiais.</p>
+            
+            <div class="py-4 my-2 border-y border-white/10">
+              <span class="text-xs text-neutral-400 block uppercase">Investimento</span>
+              <span class="text-2xl font-display font-bold text-brand-pink">Valor a Combinar</span>
+              <span class="text-[11px] text-neutral-400 block mt-1">Por diária, horas ou formato do evento</span>
+            </div>
+
+            <ul class="space-y-3 text-xs text-neutral-300 my-6">
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-green"></i> Cobertura completa dos momentos-chave</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-green"></i> Agilidade e pontualidade</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-green"></i> Fotos espontâneas dos convidados</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-green"></i> Entrega ágil para partilha</li>
+            </ul>
+          </div>
+
+          <button onclick="selecionarServico('Eventos e Comemorações')" class="w-full py-3.5 rounded-xl bg-white/10 hover:bg-brand-pink text-white font-bold text-xs uppercase tracking-wider transition-all">
+            Consultar Este Plano
+          </button>
+        </div>
+
+      </div>
+
+      <!-- Formulário Direto de Pedido de Orçamento com WhatsApp / Contacto -->
+      <div class="max-w-3xl mx-auto bg-brand-card p-8 sm:p-10 rounded-3xl border border-white/10 shadow-2xl relative overflow-hidden">
+        <div class="text-center mb-8">
+          <h3 class="font-display font-bold text-2xl text-white">Solicite o seu Orçamento</h3>
+          <p class="text-xs sm:text-sm text-neutral-400 mt-2">
+            Preencha os campos abaixo e entraremos em contacto pelo WhatsApp rapidamente para combinarmos os detalhes!
+          </p>
+        </div>
+
+        <form id="formOrcamento" onsubmit="enviarOrcamentoWhatsApp(event)" class="space-y-5">
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+            <div>
+              <label class="block text-xs font-semibold uppercase tracking-wider text-neutral-300 mb-2">Seu Nome *</label>
+              <input type="text" id="nomeCliente" required placeholder="Ex: Edivania" 
+                     class="w-full bg-brand-black/70 border border-white/15 rounded-xl px-4 py-3 text-sm text-white placeholder-neutral-500 focus:outline-none focus:border-brand-green transition-all" />
+            </div>
+            <div>
+              <label class="block text-xs font-semibold uppercase tracking-wider text-neutral-300 mb-2">WhatsApp / Telefone *</label>
+              <input type="tel" id="telefoneCliente" required placeholder="Ex: (62) 99816-7124" 
+                     class="w-full bg-brand-black/70 border border-white/15 rounded-xl px-4 py-3 text-sm text-white placeholder-neutral-500 focus:outline-none focus:border-brand-green transition-all" />
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+            <div>
+              <label class="block text-xs font-semibold uppercase tracking-wider text-neutral-300 mb-2">Tipo de Sessão</label>
+              <select id="tipoTrabalho" class="w-full bg-brand-black/70 border border-white/15 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-brand-pink transition-all">
+                <option value="Ensaio Fotográfico">Ensaio Fotográfico</option>
+                <option value="Casamento / Noivado">Casamento / Noivado</option>
+                <option value="Ensaio ao Ar Livre">Ensaio ao Ar Livre</option>
+                <option value="Cobertura de Evento">Cobertura de Evento / Aniversário</option>
+                <option value="Outro Projeto Personalizado">Outro Projeto Personalizado</option>
+              </select>
+            </div>
+            <div>
+              <label class="block text-xs font-semibold uppercase tracking-wider text-neutral-300 mb-2">Data Prevista ou Mês</label>
+              <input type="text" id="dataPrevista" placeholder="Ex: Próximo mês ou A definir" 
+                     class="w-full bg-brand-black/70 border border-white/15 rounded-xl px-4 py-3 text-sm text-white placeholder-neutral-500 focus:outline-none focus:border-brand-pink transition-all" />
+            </div>
+          </div>
+
+          <div>
+            <label class="block text-xs font-semibold uppercase tracking-wider text-neutral-300 mb-2">Detalhes & Ideias do Ensaio</label>
+            <textarea id="mensagemDetalhes" rows="3" placeholder="Indique o local pretendido, tema ou como imagina o seu ensaio..." 
+                      class="w-full bg-brand-black/70 border border-white/15 rounded-xl px-4 py-3 text-sm text-white placeholder-neutral-500 focus:outline-none focus:border-brand-green transition-all"></textarea>
+          </div>
+
+          <div class="flex flex-col sm:flex-row items-center gap-4 pt-2">
+            <button type="submit" class="w-full sm:flex-1 py-4 rounded-xl bg-gradient-to-r from-brand-green to-brand-green-dark text-brand-black font-extrabold text-sm uppercase tracking-wider hover:opacity-95 hover:shadow-lg hover:shadow-brand-green/30 transition-all flex items-center justify-center gap-2">
+              <i class="fa-brands fa-whatsapp text-lg"></i>
+              <span>Enviar Pedido para o WhatsApp</span>
+            </button>
+            <button type="button" onclick="enviarViaEmail()" class="w-full sm:w-auto px-6 py-4 rounded-xl border border-white/20 bg-white/5 hover:bg-white/10 text-white text-xs font-bold uppercase tracking-wider transition-all flex items-center justify-center gap-2">
+              <i class="fa-regular fa-envelope"></i>
+              <span>Enviar por E-mail</span>
+            </button>
+          </div>
+        </form>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ========================================================= -->
+  <!-- SECÇÃO DE CONTACTOS & REDES SOCIAIS                       -->
+  <!-- ========================================================= -->
+  <section id="contactos" class="py-20 bg-brand-black relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <!-- Informações de Contacto Direto -->
+        <div class="lg:col-span-6 space-y-6">
+          <span class="text-xs font-bold uppercase tracking-widest text-brand-green block">Fale Conosco</span>
+          <h2 class="text-3xl sm:text-4xl font-display font-extrabold text-white">
+            Estamos prontos para registar a sua melhor versão.
+          </h2>
+          <p class="text-neutral-400 text-sm leading-relaxed">
+            Dúvidas ou agendamentos? Contacte diretamente no WhatsApp, e-mail ou envie uma mensagem no Instagram.
+          </p>
+
+          <div class="space-y-4 pt-2">
+            
+            <!-- Item WhatsApp -->
+            <a href="https://wa.me/5562998167124" target="_blank" class="flex items-center gap-4 p-4 rounded-2xl bg-brand-card border border-white/10 hover:border-brand-green transition-all group">
+              <div class="w-12 h-12 rounded-xl bg-brand-green/20 text-brand-green flex items-center justify-center text-lg group-hover:scale-110 transition-transform">
+                <i class="fa-brands fa-whatsapp"></i>
+              </div>
+              <div>
+                <p class="text-xs text-neutral-400 uppercase font-semibold">WhatsApp / Telefone</p>
+                <p class="text-base font-bold text-white group-hover:text-brand-green transition-colors">(62) 99816-7124</p>
+              </div>
+            </a>
+
+            <!-- Item Email -->
+            <a href="mailto:eyshilagabi2017@gmail.com" class="flex items-center gap-4 p-4 rounded-2xl bg-brand-card border border-white/10 hover:border-brand-pink transition-all group">
+              <div class="w-12 h-12 rounded-xl bg-brand-pink/20 text-brand-pink flex items-center justify-center text-lg group-hover:scale-110 transition-transform">
+                <i class="fa-solid fa-envelope"></i>
+              </div>
+              <div>
+                <p class="text-xs text-neutral-400 uppercase font-semibold">E-mail Profissional</p>
+                <p class="text-base font-bold text-white group-hover:text-brand-pink transition-colors">eyshilagabi2017@gmail.com</p>
+              </div>
+            </a>
+
+            <!-- Item Instagram -->
+            <a href="https://instagram.com/edivaniadour4do" target="_blank" rel="noopener noreferrer" class="flex items-center gap-4 p-4 rounded-2xl bg-brand-card border border-white/10 hover:border-brand-pink transition-all group">
+              <div class="w-12 h-12 rounded-xl bg-brand-pink/20 text-brand-pink flex items-center justify-center text-lg group-hover:scale-110 transition-transform">
+                <i class="fa-brands fa-instagram"></i>
+              </div>
+              <div>
+                <p class="text-xs text-neutral-400 uppercase font-semibold">Instagram Oficial</p>
+                <p class="text-base font-bold text-white group-hover:text-brand-pink transition-colors">@edivaniadour4do</p>
+              </div>
+            </a>
+
+          </div>
+        </div>
+
+        <!-- Redes Sociais & Presença Digital com Logomarca Central -->
+        <div class="lg:col-span-6 bg-brand-card p-8 sm:p-10 rounded-3xl border border-white/10 text-center">
+          <div class="w-20 h-20 mx-auto rounded-2xl gradient-border-glow p-0.5 mb-6">
+            <div class="w-full h-full bg-brand-black rounded-2xl flex items-center justify-center p-2">
+              <img src="https://res.cloudinary.com/aru8btca/image/upload/v1788368826/logo_dhy.png" alt="Logo Dhy Fotografias" class="max-h-full max-w-full object-contain" />
+            </div>
+          </div>
+          
+          <h3 class="font-display font-bold text-2xl text-white mb-2">Acompanhe Nosso Trabalho</h3>
+          <p class="text-neutral-400 text-xs sm:text-sm max-w-md mx-auto mb-8">
+            Veja prévias de ensaios, novidades, bastidores e inspirações nas nossas redes sociais.
+          </p>
+
+          <!-- Grelha de Redes Sociais -->
+          <div class="grid grid-cols-2 sm:grid-cols-3 gap-4">
+            
+            <!-- Instagram -->
+            <a href="https://instagram.com/edivaniadour4do" target="_blank" rel="noopener noreferrer" 
+               class="p-4 rounded-2xl bg-brand-black border border-white/10 hover:border-brand-pink hover:-translate-y-1 transition-all group">
+              <i class="fa-brands fa-instagram text-2xl text-brand-pink group-hover:scale-125 transition-transform block mb-2"></i>
+              <span class="text-xs font-bold text-white block">Instagram</span>
+              <span class="text-[10px] text-neutral-400">@edivaniadour4do</span>
+            </a>
+
+            <!-- WhatsApp -->
+            <a href="https://wa.me/5562998167124" target="_blank" rel="noopener noreferrer" 
+               class="p-4 rounded-2xl bg-brand-black border border-white/10 hover:border-brand-green hover:-translate-y-1 transition-all group">
+              <i class="fa-brands fa-whatsapp text-2xl text-brand-green group-hover:scale-125 transition-transform block mb-2"></i>
+              <span class="text-xs font-bold text-white block">WhatsApp</span>
+              <span class="text-[10px] text-neutral-400">Conversar</span>
+            </a>
+
+            <!-- E-mail -->
+            <a href="mailto:eyshilagabi2017@gmail.com" 
+               class="p-4 rounded-2xl bg-brand-black border border-white/10 hover:border-brand-pink hover:-translate-y-1 transition-all group col-span-2 sm:col-span-1">
+              <i class="fa-solid fa-envelope text-2xl text-brand-pink group-hover:scale-125 transition-transform block mb-2"></i>
+              <span class="text-xs font-bold text-white block">E-mail</span>
+              <span class="text-[10px] text-neutral-400">Mensagem</span>
+            </a>
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ========================================================= -->
+  <!-- RODAPÉ COM A LOGOMARCA                                    -->
+  <!-- ========================================================= -->
+  <footer class="bg-black border-t border-white/10 py-10 text-neutral-500 text-xs">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-6">
+      
+      <div class="flex items-center gap-3">
+        <img src="https://res.cloudinary.com/aru8btca/image/upload/v1788368826/logo_dhy.png" alt="Dhy Fotografias" class="h-7 w-auto object-contain" />
+        <span class="font-display font-bold text-white tracking-wider text-sm">DHY FOTOGRAFIAS</span>
+        <span>•</span>
+        <span>Todos os direitos reservados &copy; <span id="currentYear"></span></span>
+      </div>
+
+      <div class="flex items-center gap-6">
+        <a href="#inicio" class="hover:text-brand-pink transition-colors">Voltar ao topo</a>
+        <a href="#portfolio" class="hover:text-brand-green transition-colors">Galeria</a>
+        <a href="#orcamento" class="hover:text-white transition-colors">Orçamentos</a>
+      </div>
+
+    </div>
+  </footer>
+
+
+  <!-- ========================================================= -->
+  <!-- BOTÃO FLUTUANTE DE WHATSAPP COM PING ANIMADO              -->
+  <!-- ========================================================= -->
+  <a href="https://wa.me/5562998167124?text=Olá!%20Gostaria%20de%20solicitar%20um%20orçamento%20para%20uma%20sessão%20fotográfica%20com%20Dhy%20Fotografias." 
+     target="_blank" 
+     rel="noopener noreferrer"
+     aria-label="Conversar pelo WhatsApp"
+     class="fixed bottom-6 right-6
