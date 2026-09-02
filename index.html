@@ -7,7 +7,7 @@
   <meta name="description" content="Dhy Fotografias - Estúdio de fotografia profissional especializado em casamentos, ensaios, moda e eventos. Peça o seu orçamento personalizado." />
 
   <!-- Favicon com a sua Logomarca Atualizada -->
-  <link rel="icon" type="image/png" href="https://res.cloudinary.com/aru8btca/image/upload/v1788368556/logo_dhy.png" />
+  <link rel="icon" type="image/png" href="https://res.cloudinary.com/aru8btca/image/upload/v1788368826/logo_dhy.png" />
 
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
@@ -87,7 +87,7 @@
       <a href="#inicio" class="flex items-center gap-3 group">
         <div class="h-12 w-12 rounded-xl bg-white/5 border border-white/10 p-1.5 flex items-center justify-center transition-transform group-hover:scale-105 group-hover:border-brand-pink/50 duration-300">
           <img 
-            src="https://res.cloudinary.com/aru8btca/image/upload/v1788368556/logo_dhy.png" 
+            src="https://res.cloudinary.com/aru8btca/image/upload/v1788368826/logo_dhy.png" 
             alt="Dhy Fotografias Logomarca" 
             class="h-full w-full object-contain filter drop-shadow"
             onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1554048612-b6a482bc67e5?auto=format&fit=crop&w=100&q=80';"
@@ -252,7 +252,7 @@
               <div class="absolute bottom-0 left-0 right-0 p-5 bg-gradient-to-t from-brand-black via-brand-black/85 to-transparent">
                 <div class="flex items-center justify-between">
                   <div class="flex items-center gap-3">
-                    <img src="https://res.cloudinary.com/aru8btca/image/upload/v1788368556/logo_dhy.png" alt="Logo Dhy" class="h-8 w-8 object-contain" />
+                    <img src="https://res.cloudinary.com/aru8btca/image/upload/v1788368826/logo_dhy.png" alt="Logo Dhy" class="h-8 w-8 object-contain" />
                     <div>
                       <h3 class="font-display font-bold text-lg text-white">Edivania Dourado</h3>
                       <p class="text-xs text-brand-green font-medium">Dhy Fotografias • Fotógrafa & Diretora Criativa</p>
@@ -746,7 +746,7 @@
         <div class="lg:col-span-6 bg-brand-card p-8 sm:p-10 rounded-3xl border border-white/10 text-center">
           <div class="w-20 h-20 mx-auto rounded-2xl gradient-border-glow p-0.5 mb-6">
             <div class="w-full h-full bg-brand-black rounded-2xl flex items-center justify-center p-2">
-              <img src="https://res.cloudinary.com/aru8btca/image/upload/v1788368556/logo_dhy.png" alt="Logo Dhy Fotografias" class="max-h-full max-w-full object-contain" />
+              <img src="https://res.cloudinary.com/aru8btca/image/upload/v1788368826/logo_dhy.png" alt="Logo Dhy Fotografias" class="max-h-full max-w-full object-contain" />
             </div>
           </div>
           
@@ -798,7 +798,7 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-6">
       
       <div class="flex items-center gap-3">
-        <img src="https://res.cloudinary.com/aru8btca/image/upload/v1788368556/logo_dhy.png" alt="Dhy Fotografias" class="h-7 w-auto object-contain" />
+        <img src="https://res.cloudinary.com/aru8btca/image/upload/v1788368826/logo_dhy.png" alt="Dhy Fotografias" class="h-7 w-auto object-contain" />
         <span class="font-display font-bold text-white tracking-wider text-sm">DHY FOTOGRAFIAS</span>
         <span>•</span>
         <span>Todos os direitos reservados &copy; <span id="currentYear"></span></span>
@@ -806,4 +806,169 @@
 
       <div class="flex items-center gap-6">
         <a href="#inicio" class="hover:text-brand-pink transition-colors">Voltar ao topo</a>
-        <a href="#portfolio" class="hover:text-
+        <a href="#portfolio" class="hover:text-brand-green transition-colors">Galeria</a>
+        <a href="#orcamento" class="hover:text-white transition-colors">Orçamentos</a>
+      </div>
+
+    </div>
+  </footer>
+
+
+  <!-- ========================================================= -->
+  <!-- BOTÃO FLUTUANTE DE WHATSAPP COM PING ANIMADO              -->
+  <!-- ========================================================= -->
+  <a href="https://wa.me/5562998167124?text=Olá!%20Gostaria%20de%20solicitar%20um%20orçamento%20para%20uma%20sessão%20fotográfica%20com%20Dhy%20Fotografias." 
+     target="_blank" 
+     rel="noopener noreferrer"
+     aria-label="Conversar pelo WhatsApp"
+     class="fixed bottom-6 right-6 z-40 w-14 h-14 bg-brand-green text-brand-black rounded-full flex items-center justify-center text-2xl shadow-2xl hover:scale-110 hover:bg-white hover:text-brand-green transition-all duration-300 group">
+    <span class="absolute -top-1 -right-1 flex h-4 w-4">
+      <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-brand-pink opacity-75"></span>
+      <span class="relative inline-flex rounded-full h-4 w-4 bg-brand-pink"></span>
+    </span>
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+
+  <!-- ========================================================= -->
+  <!-- MODAL DE LIGHTBOX PARA VISUALIZAÇÃO DE FOTOS              -->
+  <!-- ========================================================= -->
+  <div id="lightboxModal" class="fixed inset-0 z-50 bg-black/95 backdrop-blur-md hidden flex items-center justify-center p-4">
+    <button onclick="fecharLightbox()" class="absolute top-6 right-6 text-white/80 hover:text-brand-pink text-3xl transition-colors z-10" title="Fechar visualização">
+      <i class="fa-solid fa-xmark"></i>
+    </button>
+    
+    <div class="max-w-5xl max-h-[90vh] flex flex-col items-center">
+      <img id="lightboxImg" src="" alt="[Fotografia ampliada em alta resolução]" class="max-h-[75vh] w-auto object-contain rounded-xl shadow-2xl border border-white/10" />
+      <div class="mt-4 text-center">
+        <span id="lightboxBadge" class="text-xs font-bold uppercase tracking-widest text-brand-green"></span>
+        <h4 id="lightboxTitle" class="text-lg font-display font-bold text-white mt-1"></h4>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ========================================================= -->
+  <!-- CAIXA DE MENSAGEM / NOTIFICAÇÃO TOAST                     -->
+  <!-- ========================================================= -->
+  <div id="toastNotification" class="fixed bottom-6 left-6 z-50 bg-brand-card border border-brand-green text-white px-5 py-3 rounded-2xl shadow-2xl flex items-center gap-3 transition-all duration-300 transform translate-y-24 opacity-0 pointer-events-none">
+    <i class="fa-solid fa-circle-check text-brand-green text-lg" id="toastIcon"></i>
+    <span id="toastMessage" class="text-xs font-semibold">Mensagem copiada com sucesso!</span>
+  </div>
+
+
+  <!-- ========================================================= -->
+  <!-- JAVASCRIPT DE CONTROLO E INTERATIVIDADE                   -->
+  <!-- ========================================================= -->
+  <script>
+    // Atualizar o ano do copyright automaticamente
+    document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+    // Menu Mobile Toggle
+    const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    const mobileLinks = document.querySelectorAll('.mobile-link');
+
+    mobileMenuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    mobileLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.add('hidden');
+      });
+    });
+
+    // Filtros da Galeria de Portfólio
+    const filterButtons = document.querySelectorAll('.filter-btn');
+    const portfolioCards = document.querySelectorAll('.portfolio-card');
+
+    filterButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        // Atualizar estado ativo dos botões
+        filterButtons.forEach(b => {
+          b.classList.remove('bg-brand-green', 'text-brand-black');
+          b.classList.add('bg-brand-card', 'text-neutral-300');
+        });
+        btn.classList.add('bg-brand-green', 'text-brand-black');
+        btn.classList.remove('bg-brand-card', 'text-neutral-300');
+
+        const filterValue = btn.getAttribute('data-filter');
+
+        portfolioCards.forEach(card => {
+          if (filterValue === 'all' || card.getAttribute('data-category') === filterValue) {
+            card.style.display = 'block';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      });
+    });
+
+    // Função para abrir o Lightbox
+    function abrirLightbox(src, title, category) {
+      const modal = document.getElementById('lightboxModal');
+      const img = document.getElementById('lightboxImg');
+      const titleElem = document.getElementById('lightboxTitle');
+      const badgeElem = document.getElementById('lightboxBadge');
+
+      img.src = src;
+      titleElem.textContent = title;
+      badgeElem.textContent = category;
+
+      modal.classList.remove('hidden');
+      document.body.style.overflow = 'hidden';
+    }
+
+    // Função para fechar o Lightbox
+    function fecharLightbox() {
+      const modal = document.getElementById('lightboxModal');
+      modal.classList.add('hidden');
+      document.body.style.overflow = 'auto';
+    }
+
+    // Fechar ao clicar fora da imagem
+    document.getElementById('lightboxModal').addEventListener('click', (e) => {
+      if (e.target.id === 'lightboxModal') {
+        fecharLightbox();
+      }
+    });
+
+    // Tecla ESC fecha o lightbox
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') fecharLightbox();
+    });
+
+    // Copiar número de telefone para a área de transferência
+    function copiarTelefone(num) {
+      const tempInput = document.createElement('input');
+      tempInput.value = num;
+      document.body.appendChild(tempInput);
+      tempInput.select();
+      document.execCommand('copy');
+      document.body.removeChild(tempInput);
+      mostrarNotificacao('Telefone copiado para a área de transferência!');
+    }
+
+    // Pré-selecionar serviço no formulário ao clicar nos cartões
+    function selecionarServico(nomeServico) {
+      const select = document.getElementById('tipoTrabalho');
+      for (let i = 0; i < select.options.length; i++) {
+        if (select.options[i].text.toLowerCase().includes(nomeServico.toLowerCase()) || 
+            select.options[i].value.toLowerCase().includes(nomeServico.toLowerCase())) {
+          select.selectedIndex = i;
+          break;
+        }
+      }
+      document.getElementById('orcamento').scrollIntoView({ behavior: 'smooth' });
+      document.getElementById('nomeCliente').focus();
+    }
+
+    // Enviar pedido de orçamento via WhatsApp
+    function enviarOrcamentoWhatsApp(event) {
+      event.preventDefault();
+      
+      const nome = document.getElementById('nomeCliente').value;
+      const tel = document.getElementById('telefoneCliente').value;
+      const tipo = document.getElementById('tipoTrabalho').value;
+      const data = document.getElementById('dataPrevista').value || '
