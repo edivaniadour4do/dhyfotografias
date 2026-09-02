@@ -4,7 +4,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Dhy Fotografias | Estúdio & Fotografia Profissional</title>
-  <meta name="description" content="Dhy Fotografias - Estúdio de fotografia profissional especializado em casamentos, retratos, moda e eventos. Peça o seu orçamento personalizado." />
+  <meta name="description" content="Dhy Fotografias - Estúdio de fotografia profissional especializado em casamentos, ensaios, moda e eventos. Peça o seu orçamento personalizado." />
+
+  <!-- Favicon com a sua Logomarca -->
+  <link rel="icon" type="image/png" href="https://res.cloudinary.com/aru8btca/image/upload/v1788368254/logo_dhy.png" />
 
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
@@ -75,21 +78,24 @@
 <body class="bg-brand-black text-white font-sans antialiased selection:bg-brand-pink selection:text-white relative overflow-x-hidden">
 
   <!-- ========================================================= -->
-  <!-- BARRA DE NAVEGAÇÃO                                         -->
+  <!-- BARRA DE NAVEGAÇÃO COM SUA LOGOMARCA                      -->
   <!-- ========================================================= -->
-  <header class="fixed top-0 left-0 w-full z-50 bg-brand-black/80 backdrop-blur-md border-b border-white/10 transition-all duration-300" id="navbar">
+  <header class="fixed top-0 left-0 w-full z-50 bg-brand-black/85 backdrop-blur-md border-b border-white/10 transition-all duration-300" id="navbar">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
       
-      <!-- Logótipo -->
+      <!-- Logótipo Oficial -->
       <a href="#inicio" class="flex items-center gap-3 group">
-        <div class="w-10 h-10 rounded-full gradient-border-glow p-0.5 transition-transform group-hover:rotate-12 duration-300">
-          <div class="w-full h-full bg-brand-black rounded-full flex items-center justify-center">
-            <i class="fa-solid fa-camera-retro text-brand-pink text-sm group-hover:text-brand-green transition-colors"></i>
-          </div>
+        <div class="h-12 w-12 rounded-xl bg-white/5 border border-white/10 p-1.5 flex items-center justify-center transition-transform group-hover:scale-105 group-hover:border-brand-pink/50 duration-300">
+          <img 
+            src="https://res.cloudinary.com/aru8btca/image/upload/v1788368254/logo_dhy.png" 
+            alt="Dhy Fotografias Logomarca" 
+            class="h-full w-full object-contain filter drop-shadow"
+            onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1554048612-b6a482bc67e5?auto=format&fit=crop&w=100&q=80';"
+          />
         </div>
         <div>
-          <span class="font-display font-extrabold text-xl tracking-wider text-white">DHY</span>
-          <span class="text-xs tracking-widest block text-brand-green uppercase font-semibold">Fotografias</span>
+          <span class="font-display font-extrabold text-xl tracking-wider text-white group-hover:text-brand-pink transition-colors">DHY</span>
+          <span class="text-[11px] tracking-widest block text-brand-green uppercase font-semibold">Fotografias</span>
         </div>
       </a>
 
@@ -99,7 +105,7 @@
         <a href="#sobre" class="text-neutral-300 hover:text-brand-pink transition-colors">Sobre</a>
         <a href="#portfolio" class="text-neutral-300 hover:text-brand-green transition-colors">Portfólio</a>
         <a href="#orcamento" class="text-neutral-300 hover:text-brand-pink transition-colors">Orçamento</a>
-        <a href="#contactos" class="text-neutral-300 hover:text-brand-green transition-colors">Contactos</a>
+        <a href="#contactos" class="text-neutral-300 hover:text-brand-green transition-colors">Contatos</a>
       </nav>
 
       <!-- Botão de Ação Rápida WhatsApp -->
@@ -125,7 +131,7 @@
       <a href="#sobre" class="block text-neutral-300 font-medium hover:text-brand-pink mobile-link">Sobre</a>
       <a href="#portfolio" class="block text-neutral-300 font-medium hover:text-brand-green mobile-link">Portfólio</a>
       <a href="#orcamento" class="block text-neutral-300 font-medium hover:text-brand-pink mobile-link">Orçamento</a>
-      <a href="#contactos" class="block text-neutral-300 font-medium hover:text-brand-green mobile-link">Contactos</a>
+      <a href="#contactos" class="block text-neutral-300 font-medium hover:text-brand-green mobile-link">Contatos</a>
       <div class="pt-4 border-t border-white/10 flex flex-col gap-3">
         <a href="tel:+5562998167124" class="flex items-center gap-3 text-brand-green font-semibold">
           <i class="fa-solid fa-phone"></i> (62) 99816-7124
@@ -164,7 +170,7 @@
 
           <!-- Descrição -->
           <p class="text-base sm:text-lg text-neutral-300 max-w-2xl mx-auto lg:mx-0 font-light leading-relaxed">
-            Bem-vindo ao <strong class="text-white font-semibold">Dhy Fotografias</strong>! Especialistas em retratos marcantes, casamentos emocionantes, produções de moda e eventos inesquecíveis.
+            Bem-vindo ao <strong class="text-white font-semibold">Dhy Fotografias</strong>! Especialistas em ensaios marcantes, casamentos emocionantes, produções de moda e eventos inesquecíveis.
           </p>
 
           <!-- Bloco em Destaque: Telefone / WhatsApp Directo -->
@@ -242,16 +248,19 @@
                 onerror="this.src='https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=800&q=80'"
               />
 
-              <!-- Tarjeta Flutuante Sobre a Foto -->
-              <div class="absolute bottom-0 left-0 right-0 p-5 bg-gradient-to-t from-brand-black via-brand-black/80 to-transparent">
+              <!-- Tarjeta Flutuante Sobre a Foto com Logomarca Integrada -->
+              <div class="absolute bottom-0 left-0 right-0 p-5 bg-gradient-to-t from-brand-black via-brand-black/85 to-transparent">
                 <div class="flex items-center justify-between">
-                  <div>
-                    <h3 class="font-display font-bold text-lg text-white">Edivania Dourado</h3>
-                    <p class="text-xs text-brand-green font-medium">Dhy Fotografias • Fotógrafa & Diretora Criativa</p>
+                  <div class="flex items-center gap-3">
+                    <img src="https://res.cloudinary.com/aru8btca/image/upload/v1788368254/logo_dhy.png" alt="Logo Dhy" class="h-8 w-8 object-contain" />
+                    <div>
+                      <h3 class="font-display font-bold text-lg text-white">Edivania Dourado</h3>
+                      <p class="text-xs text-brand-green font-medium">Dhy Fotografias • Fotógrafa & Diretora Criativa</p>
+                    </div>
                   </div>
-                  <div class="flex items-center gap-2 bg-black/60 px-3 py-1.5 rounded-full border border-white/10">
+                  <div class="hidden sm:flex items-center gap-1.5 bg-black/60 px-3 py-1.5 rounded-full border border-white/10">
                     <i class="fa-solid fa-award text-brand-pink text-xs"></i>
-                    <span class="text-[11px] font-bold tracking-wider text-neutral-200">PROFISSIONAL</span>
+                    <span class="text-[10px] font-bold tracking-wider text-neutral-200">PROFISSIONAL</span>
                   </div>
                 </div>
               </div>
@@ -347,7 +356,7 @@
           <h2 class="text-3xl sm:text-5xl font-display font-extrabold text-white">Nosso Portfólio</h2>
         </div>
         <p class="text-neutral-400 text-sm max-w-md">
-          Uma seleção de sessões individuais, casais, casamentos, moda e eventos realizados com muito carinho e profissionalismo.
+          Uma seleção de ensaios individuais, casamentos, moda e eventos realizados com sensibilidade e profissionalismo.
         </p>
       </div>
 
@@ -379,7 +388,7 @@
              onclick="abrirLightbox('https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1200&q=85', 'Casamento Mariana & Diogo', 'Casamentos')">
           <div class="aspect-[4/5] overflow-hidden bg-neutral-900">
             <img src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=800&q=80" 
-                 alt="[Fotografia de casamento elegante de noivos a celebrar ao ar livre]" 
+                 alt="[Fotografia de casamento elegante de noivos ao ar livre]" 
                  class="portfolio-img w-full h-full object-cover">
           </div>
           <div class="absolute inset-0 bg-gradient-to-t from-brand-black via-brand-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
@@ -459,13 +468,13 @@
              onclick="abrirLightbox('https://images.unsplash.com/photo-1583939003579-730e3918a45a?auto=format&fit=crop&w=1200&q=85', 'Ensaio Pré-Wedding / Casal', 'Casamentos')">
           <div class="aspect-[4/5] overflow-hidden bg-neutral-900">
             <img src="https://images.unsplash.com/photo-1583939003579-730e3918a45a?auto=format&fit=crop&w=800&q=80" 
-                 alt="[Casal de noivos em sessão fotográfica romântica ao entardecer]" 
+                 alt="[Casal de noivos em ensaio romântico]" 
                  class="portfolio-img w-full h-full object-cover">
           </div>
           <div class="absolute inset-0 bg-gradient-to-t from-brand-black via-brand-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
             <span class="text-xs font-bold uppercase tracking-wider text-brand-pink mb-1">Casamentos</span>
             <h3 class="font-display font-bold text-xl text-white">Sessão Pré-Wedding</h3>
-            <p class="text-xs text-neutral-300 mt-1">Momentos de amor genuíno e conexão entre casais.</p>
+            <p class="text-xs text-neutral-300 mt-1">Momentos de carinho genuíno e conexão entre casais.</p>
             <div class="mt-4 flex items-center gap-2 text-brand-green text-xs font-bold">
               <span>Ampliar foto</span>
               <i class="fa-solid fa-arrow-right text-[10px]"></i>
@@ -617,7 +626,7 @@
         <div class="text-center mb-8">
           <h3 class="font-display font-bold text-2xl text-white">Solicite o seu Orçamento</h3>
           <p class="text-xs sm:text-sm text-neutral-400 mt-2">
-            Preencha os campos abaixo e entraremos em contacto pelo WhatsApp rapidinho para combinarmos os detalhes!
+            Preencha os campos abaixo e entraremos em contato pelo WhatsApp rapidinho para combinarmos os detalhes!
           </p>
         </div>
 
@@ -733,11 +742,11 @@
           </div>
         </div>
 
-        <!-- Redes Sociais & Presença Digital -->
+        <!-- Redes Sociais & Presença Digital com Logomarca Central -->
         <div class="lg:col-span-6 bg-brand-card p-8 sm:p-10 rounded-3xl border border-white/10 text-center">
-          <div class="w-16 h-16 mx-auto rounded-2xl gradient-border-glow p-0.5 mb-6">
-            <div class="w-full h-full bg-brand-black rounded-2xl flex items-center justify-center">
-              <i class="fa-solid fa-hashtag text-brand-pink text-2xl"></i>
+          <div class="w-20 h-20 mx-auto rounded-2xl gradient-border-glow p-0.5 mb-6">
+            <div class="w-full h-full bg-brand-black rounded-2xl flex items-center justify-center p-2">
+              <img src="https://res.cloudinary.com/aru8btca/image/upload/v1788368254/logo_dhy.png" alt="Logo Dhy Fotografias" class="max-h-full max-w-full object-contain" />
             </div>
           </div>
           
@@ -783,12 +792,13 @@
 
 
   <!-- ========================================================= -->
-  <!-- RODAPÉ                                                    -->
+  <!-- RODAPÉ COM A SUA LOGOMARCA                                -->
   <!-- ========================================================= -->
   <footer class="bg-black border-t border-white/10 py-10 text-neutral-500 text-xs">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-6">
       
       <div class="flex items-center gap-3">
+        <img src="https://res.cloudinary.com/aru8btca/image/upload/v1788368254/logo_dhy.png" alt="Dhy Fotografias" class="h-7 w-auto object-contain" />
         <span class="font-display font-bold text-white tracking-wider text-sm">DHY FOTOGRAFIAS</span>
         <span>•</span>
         <span>Todos os direitos reservados &copy; <span id="currentYear"></span></span>
@@ -966,7 +976,7 @@
 
       const texto = `*NOVO PEDIDO DE ORÇAMENTO - DHY FOTOGRAFIAS*%0A%0A` +
                     `👤 *Nome:* ${encodeURIComponent(nome)}%0A` +
-                    `📱 *Contacto:* ${encodeURIComponent(tel)}%0A` +
+                    `📱 *Contato:* ${encodeURIComponent(tel)}%0A` +
                     `📷 *Tipo de Trabalho:* ${encodeURIComponent(tipo)}%0A` +
                     `📅 *Data Prevista:* ${encodeURIComponent(data)}%0A` +
                     `📝 *Detalhes:* ${encodeURIComponent(detalhes)}%0A%0A` +
