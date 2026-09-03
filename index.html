@@ -65,7 +65,7 @@
     
     /* Efeito suave de aproximação nas fotos */
     .portfolio-img {
-      transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+      transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
     }
     .portfolio-card:hover .portfolio-img {
       transform: scale(1.06);
@@ -78,7 +78,7 @@
   <!-- ========================================================= -->
   <!-- BARRA DE NAVEGAÇÃO                                        -->
   <!-- ========================================================= -->
-  <header class="fixed top-0 left-0 w-full z-50 bg-brand-black/85 backdrop-blur-md border-b border-white/10 transition-all duration-300" id="navbar">
+  <header class="fixed top-0 left-0 w-full z-40 bg-brand-black/90 backdrop-blur-md border-b border-white/10 transition-all duration-300" id="navbar">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
       
       <!-- Logótipo Oficial -->
@@ -86,7 +86,7 @@
         <div class="h-12 w-12 rounded-xl bg-white/5 border border-white/10 p-1.5 flex items-center justify-center transition-transform group-hover:scale-105 group-hover:border-brand-pink/50 duration-300">
           <img 
             src="https://res.cloudinary.com/aru8btca/image/upload/v1788368826/logo_dhy.png" 
-            alt="" 
+            alt="[Image of Logótipo oficial Dhy Fotografias]" 
             class="h-full w-full object-contain filter drop-shadow"
             onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1554048612-b6a482bc67e5?auto=format&fit=crop&w=100&q=80';"
           />
@@ -108,28 +108,4 @@
 
       <!-- Botão de Ação Rápida WhatsApp -->
       <div class="hidden sm:flex items-center gap-4">
-        <a href="https://wa.me/5562998167124?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20as%20sessões%20fotográficas%20do%20Dhy%20Fotografias." 
-           target="_blank" 
-           rel="noopener noreferrer"
-           class="inline-flex items-center gap-2 bg-gradient-to-r from-brand-green to-brand-green-dark text-brand-black font-bold text-xs uppercase tracking-wider px-5 py-2.5 rounded-full hover:shadow-lg hover:shadow-brand-green/30 hover:scale-105 transition-all">
-          <i class="fa-brands fa-whatsapp text-sm"></i>
-          <span>Falar Agora</span>
-        </a>
-      </div>
-
-      <!-- Botão Menu Móvel -->
-      <button id="mobileMenuBtn" aria-label="Abrir menu de navegação" class="md:hidden text-white hover:text-brand-pink text-2xl focus:outline-none">
-        <i class="fa-solid fa-bars-staggered"></i>
-      </button>
-    </div>
-
-    <!-- Dropdown Móvel -->
-    <div id="mobileMenu" class="hidden md:hidden bg-brand-dark border-b border-white/10 px-6 py-6 space-y-4">
-      <a href="#inicio" class="block text-white font-medium hover:text-brand-pink mobile-link">Início</a>
-      <a href="#sobre" class="block text-neutral-300 font-medium hover:text-brand-pink mobile-link">Sobre</a>
-      <a href="#portfolio" class="block text-neutral-300 font-medium hover:text-brand-green mobile-link">Portfólio</a>
-      <a href="#orcamento" class="block text-neutral-300 font-medium hover:text-brand-pink mobile-link">Orçamento</a>
-      <a href="#contactos" class="block text-neutral-300 font-medium hover:text-brand-green mobile-link">Contactos</a>
-      <div class="pt-4 border-t border-white/10 flex flex-col gap-3">
-        <a href="tel:+5562998167124" class="flex items-center gap-3 text-brand-green font-semibold">
-          <i class="fa-solid fa-phone"></i> (62) 99816-712
+        <a href="
