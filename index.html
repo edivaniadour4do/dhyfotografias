@@ -336,7 +336,7 @@
           <h2 class="text-3xl sm:text-5xl font-display font-extrabold text-white">Nosso Portfólio</h2>
         </div>
         <p class="text-neutral-400 text-sm max-w-md">
-          Galeria com ensaios fotográficos, retratos marcantes e produções registadas com sensibilidade artística.
+          Galeria com ensaios fotográficos, retratos marcantes, casamentos e produções registadas com sensibilidade artística.
         </p>
       </div>
 
@@ -344,6 +344,9 @@
       <div class="flex flex-wrap items-center gap-3 mb-10">
         <button type="button" class="filter-btn active px-5 py-2.5 rounded-full text-xs font-bold uppercase tracking-wider bg-brand-green text-brand-black transition-all cursor-pointer" data-filter="all">
           TODOS OS PROJETOS
+        </button>
+        <button type="button" class="filter-btn px-5 py-2.5 rounded-full text-xs font-bold uppercase tracking-wider bg-brand-card border border-white/10 text-neutral-300 hover:border-brand-pink hover:text-white transition-all cursor-pointer" data-filter="casamento">
+          CASAMENTOS
         </button>
         <button type="button" class="filter-btn px-5 py-2.5 rounded-full text-xs font-bold uppercase tracking-wider bg-brand-card border border-white/10 text-neutral-300 hover:border-brand-pink hover:text-white transition-all cursor-pointer" data-filter="retrato">
           RETRATOS & ENSAIO
@@ -712,6 +715,20 @@
 
     // Galeria Completa de Fotografias do Portfólio
     const portfolioData = [
+      // Novas Fotos Adicionadas
+      { src: "https://res.cloudinary.com/aru8btca/image/upload/v1795113462/12102606.png", categories: ["retrato", "moda"] },
+      { src: "https://res.cloudinary.com/aru8btca/image/upload/v1795113460/15_-_Copia.jpg", categories: ["retrato", "moda"] },
+      { src: "https://res.cloudinary.com/aru8btca/image/upload/v1795113459/8_-_Copia.jpg", categories: ["retrato", "moda"] },
+      { src: "https://res.cloudinary.com/aru8btca/image/upload/v1795113456/6_-_Copia.jpg", categories: ["retrato", "moda"] },
+      { src: "https://res.cloudinary.com/aru8btca/image/upload/v1795113456/14_-_Copia.jpg", categories: ["retrato", "moda"] },
+      { src: "https://res.cloudinary.com/aru8btca/image/upload/v1795113455/11_-_Copia.jpg", categories: ["retrato", "moda"] },
+      { src: "https://res.cloudinary.com/aru8btca/image/upload/v1795113455/10_-_Copia.jpg", categories: ["retrato", "moda"] },
+      { src: "https://res.cloudinary.com/aru8btca/image/upload/v1795113455/9_-_Copia.jpg", categories: ["retrato", "moda"] },
+      { src: "https://res.cloudinary.com/aru8btca/image/upload/v1795113455/marciene_ll.jpg", categories: ["retrato", "moda"] },
+      { src: "https://res.cloudinary.com/aru8btca/image/upload/v1795113455/12102605.png", categories: ["retrato", "moda"] },
+      { src: "https://res.cloudinary.com/aru8btca/image/upload/v1795113454/5_-_Copia.jpg", categories: ["retrato", "moda"] },
+      { src: "https://res.cloudinary.com/aru8btca/image/upload/v1795113454/7_-_Copia.jpg", categories: ["retrato", "moda"] },
+
       // Fotos do Ensaio Solicitadas
       { src: "https://res.cloudinary.com/aru8btca/image/upload/v1788372624/020.jpg", categories: ["retrato", "moda"] },
       { src: "https://res.cloudinary.com/aru8btca/image/upload/v1788372622/015.jpg", categories: ["retrato", "moda"] },
@@ -775,7 +792,10 @@
       { src: "https://res.cloudinary.com/aru8btca/image/upload/v1788371128/P1390493.jpg", categories: ["retrato"] },
       { src: "https://res.cloudinary.com/aru8btca/image/upload/v1788371127/P1390478.jpg", categories: ["retrato"] },
 
-    
+      // Casamentos
+      { src: "https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=800&q=80", categories: ["casamento"] },
+      { src: "https://images.unsplash.com/photo-1583939003579-730e3918a45a?auto=format&fit=crop&w=800&q=80", categories: ["casamento"] },
+
       // Eventos
       { src: "https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&w=800&q=80", categories: ["evento"] }
     ];
